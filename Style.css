@@ -10,11 +10,8 @@ nav{
 .social-icon{
     width: 20px;
 }
-h1{
-    font-size: 300px;
-    font-family: 'Alef', sans-serif;
-    font-weight: bold;
-    font-size: 300px;
+.title{
+    font-size: 50px;
     margin-top: 100px;
     position: center;
     text-align: center;
@@ -27,14 +24,6 @@ body {
     background-size: 100% auto;
     object-fit: cover;
   }
-
-h1{
-    font-family: 'Alef', sans-serif;
-    font-weight:bold;
-    font-size: 1000px;
-    position: center;
-    text-align: center;
-}
 
 p{
     font-family: 'Montserrat', sans-serif;

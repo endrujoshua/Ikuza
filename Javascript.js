@@ -9,4 +9,4 @@ const images = [
         if (i == images.length) {
           i =  0;
         }
-  }, 1000);
+  }, 4000);
