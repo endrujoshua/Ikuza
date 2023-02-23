@@ -1,18 +1,31 @@
-.nav{
+nav{
     font-size: 20px;
-    margin: 15px 15px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    margin-right: 15px;
 }
 
 .social-icon{
     width: 20px;
 }
-h1{
-    position: center;
-    font-size: 150px;
-    text-align: center;
-}
+
 body {
     background-image: url("Images/main1.jpg");
     overflow: hidden;
     background-repeat: no-repeat;
   }
+
+h1{
+    font-size: 150px;
+    font-family: 'Cormorant', serif;
+    position: center;
+    text-align: center;
+}
+
+h2{
+    
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
