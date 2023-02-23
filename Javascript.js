@@ -1,4 +1,16 @@
-function changeBackground() {
-    var bg = ["main1.jpg", "main2.jpg", "main3.jpg", "main4.jpg"];
-    var randombg = bg[Math.floor(Math.random() * bg.length)];
-    document.body.background = "Images/"+randombg;}
+const cats = [
+    "Images/main1","Images/main2", "Images/main3", "Images/main4"
+  ]
+  
+  const node = document.getElementsByTagName("BODY");
+  
+  const cycleImages = (images, container, step) => {
+      images.forEach((image, index) => (
+      setTimeout(() => {
+          container.style.backgroundImage = `url(${image})`  
+      }, step * (index + 1))
+    ))
+    setTimeout(() => cycleImages(images, container, step), step * images.length)
+  }
+  
+  cycleImages(cats, node, 1000)
