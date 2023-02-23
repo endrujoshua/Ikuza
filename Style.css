@@ -9,4 +9,5 @@ h1{
 body {
     background-image: url("Images/main1.jpg");
     overflow: hidden;
+    background-repeat: no-repeat;
   }
