@@ -3,10 +3,10 @@
 }
 h1{
     position: center;
-    font-size: 60px;
+    font-size: 150px;
     text-align: center;
 }
 body {
-    background-image: url("images/main1.jpg");
+    background-image: url("Images/main1.jpg");
     overflow: hidden;
   }
