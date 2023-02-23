@@ -4,9 +4,9 @@ const images = [
 
   var i = 0;
   setInterval(function() {
-        document.body.style.background="url("+images[i]+")";
+        document.body.style.backgroundImage="url("+images[i]+")";
         i = i + 1;
         if (i == images.length) {
           i =  0;
         }
-  }, 5000);
+  }, 1000);
