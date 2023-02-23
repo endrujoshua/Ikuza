@@ -1,6 +1,6 @@
-.nav{
+nav{
     font-size: 20px;
-    margin: 15px 15px 0 0;
+    margin-top: 20px;
 }
 
 .social-icon{
@@ -12,7 +12,8 @@ h1{
     text-align: center;
 }
 body {
-    background-image: url("Images/main1.jpg");
+    background-image: url("Images/main3.jpg");
     overflow: hidden;
     background-repeat: no-repeat;
+    width: 100%;
   }

@@ -1,16 +1,14 @@
 const cats = [
-    "Images/main1","Images/main2", "Images/main3", "Images/main4"
+    "Images/main1.jpg","Images/main2.jpg", "Images/main3.jpg", "Images/main4.jpg"
   ]
   
-  const node = document.getElementsByTagName("BODY");
+  const node = document.getElementsbyId("content");
   
-  const cycleImages = (images, container, step) => {
-      images.forEach((image, index) => (
-      setTimeout(() => {
-          container.style.backgroundImage = `url(${image})`  
-      }, step * (index + 1))
-    ))
-    setTimeout(() => cycleImages(images, container, step), step * images.length)
-  }
-  
-  cycleImages(cats, node, 1000)
+  var i = 0;
+  setInterval(function() {
+        imageHead.style.backgroundImage = "url(" + images[i] + ")";
+        i = i + 1;
+        if (i == images.length) {
+          i =  0;
+        }
+  }, 1000);s
