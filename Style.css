@@ -11,10 +11,15 @@ nav{
     width: 20px;
 }
 h1{
+    font-size: 300px;
+    font-family: 'Alef', sans-serif;
+    font-weight: bold;
+    font-size: 300px;
+    margin-top: 100px;
     position: center;
-    font-size: 150px;
     text-align: center;
 }
+
 body {
     background-image: url("Images/main4.jpg");
     overflow: hidden;
