@@ -1,5 +1,9 @@
+.navbar-text{
+    font-size: 20px ;
+}
+
 .social-icon{
-    width: 16px;
+    width: 20px;
 }
 h1{
     position: center;
