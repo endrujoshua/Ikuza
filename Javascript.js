@@ -1,4 +1,14 @@
-function changeBackground() {
-    var bg = ["main1.jpg", "main2.jpg", "main3.jpg", "main4.jpg"];
-    var randombg = bg[Math.floor(Math.random() * bg.length)];
-    document.body.background = "Images/"+randombg;}
+const cats = [
+    "Images/main1.jpg","Images/main2.jpg", "Images/main3.jpg", "Images/main4.jpg"
+  ]
+  
+  const node = document.getElementsbyId("content");
+  
+  var i = 0;
+  setInterval(function() {
+        imageHead.style.backgroundImage = "url(" + images[i] + ")";
+        i = i + 1;
+        if (i == images.length) {
+          i =  0;
+        }
+  }, 1000);s
