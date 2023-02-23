@@ -6,3 +6,7 @@ h1{
     font-size: 60px;
     text-align: center;
 }
+body {
+    background-image: url("paper.gif");
+    overflow: hidden;
+  }
