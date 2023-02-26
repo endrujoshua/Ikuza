@@ -1,20 +1,21 @@
 nav{
-    font-family: 'Montserrat', sans-serif;
-    font-weight:bold;
-    font-size: 15px;
     margin-top: 15px;
     margin-right: 15px;
     text-align: right;
+    position: right;
 }
 
-.social-icon{
-    width: 20px;
+.navbar-collapse{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .title{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 50px;
+    color:#FDD36A;
     margin-top: 75px;
     position: center;
     text-align: center;
@@ -31,12 +32,14 @@ body {
 .intro{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    color:#FDD36A;
     position: center;
     text-align: center;
 }
 
 .description-01{
     font-family: 'Montserrat', sans-serif;
+    color:#FDD36A;
     position: center;
     text-align: center;
 }
