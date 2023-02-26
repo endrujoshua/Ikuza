@@ -1,14 +1,11 @@
-.nav{
-    margin-top: 15px;
-    margin-right: 15px;
-    text-align:center;
-    position:center;
+#navbar-main{
+    position: right;
+    text-align: right;
 }
 
 .navbar-collapse{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 100%;
 }
 
 .title{
