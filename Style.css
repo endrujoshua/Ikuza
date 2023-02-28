@@ -114,3 +114,7 @@ body {
       transform:translateX(0);
     }
   }
+/*Animation for H2 and container */
+.flex-parent{
+  display: flex;
+}
