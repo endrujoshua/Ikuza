@@ -1,19 +1,19 @@
 /* Nav Bar */
 .navbar-main{
   width: auto;
-  height:30px;
-  background-color: white;
 }
 
 .ul-navbar{
   list-style-type: none;
-  text-align: right;
+  text-align: center;
 }
 
 .li-navbar{
   display: inline;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Button no Dropdown */
 .button-main{
   background: none;
   border: none;
@@ -21,14 +21,18 @@
 }
 
 .button-main:hover{
-  background-color:#FFD4D4;
+  background-color:rgba(247, 164, 164, 0.5);
 }
 
+/* Hyperlink */
 .a-main{
   text-decoration:none;
+  font-weight: bold;
+  font-size: 16px;
   color:#F7A4A4;
 }
 
+/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -40,6 +44,7 @@
   background-color:none;
   
   min-width: 100px;
+  width:auto;
   border-width:2px;
   border-style:solid;
   border-color:white;
@@ -47,23 +52,26 @@
   text-align:left;
 }
 
+/* Dropdown Hyperlink */
 .a-secondary{
   text-decoration: none;
+  font-size: 12px;
   color: #FEBE8C;
   padding: 5px 10px 5px 10px ;
   display: block;
 }
 
+/* Dropdown Hover */
 .a-secondary:hover{
-  background-color:none;
+  background-color:rgba(247, 164, 164, 0.5);
 }
 
 .dropdown:hover .dropdown-content {
-display: block;
+  display: block;
 }
 
 .dropdown:hover .dropbtn-main {
-background-color: none;
+  background-color: none;
 }
 /*Layout of the website */
 .content {
