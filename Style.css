@@ -78,42 +78,49 @@ background-color: none;
 }
 /*Background image */
 body {
-    background-image: url("Images/main4.jpg");
-  min-height: 50%;
-  min-width: 100%;
-  background-repeat: no-repeat;
-  }
+  background-image: url("Images/main4.jpg");
+overflow: hidden;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: height: 1920px width: 1080px;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: top 0px center;
+}
 
 .intro{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color:#FDD36A;
-    margin: -15px 20px 0px 0;
-    position: right;
-    text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color:#FDD36A;
+  margin: -15px 20px 0px 0;
+  position: right;
+  text-align: right;
 }
 
 /*Animation */
 
 .slide-right {
-    width: 100%;
-    overflow: hidden;
-    margin-left: 300px;
-    max-width: 500px
+  width: 100%;
+  margin-left: 500px;
+  max-width: 600px;
+  display: flex;
+}
+
+.slide-right h2 {
+  animation: 0.5s slide-up 1s forwards;
+    transform:translatey(600%);
+    color: white;
+    font-size: 30px;
+}
+
+@keyframes slide-up {
+  to {
+    transform:translateX(0);
   }
-  
-  .slide-right h2 {
-    animation: 2s slide-right 2s forwards;
-      transform:translateX(-100%);
-  }
-  
-  @keyframes slide-right {
-    to {
-      transform:translateX(0);
-    }
-  }
+}
 /*Animation for H2 and container */
 .flex-parent{
-  display: flex;
+display: ;
 }
