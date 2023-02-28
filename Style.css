@@ -44,17 +44,19 @@ body {
 
 .slide-right {
     width: 100%;
-    overflow: hidden;
-    margin-left: 300px;
-    max-width: 500px
+    margin-left: 500px;
+    max-width: 600px;
+    display: flex;
   }
   
   .slide-right h2 {
-    animation: 2s slide-right 2s forwards;
-      transform:translateX(-100%);
+    animation: 0.5s slide-up 1s forwards;
+      transform:translatey(600%);
+      color: white;
+      font-size: 30px;
   }
   
-  @keyframes slide-right {
+  @keyframes slide-up {
     to {
       transform:translateX(0);
     }
