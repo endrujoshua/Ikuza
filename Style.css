@@ -1,12 +1,71 @@
-#navbar-main{
-    position: right;
-    text-align: right;
+/* Nav Bar */
+.navbar-main{
+  width: auto;
+  background-color: white;
 }
 
-.navbar-collapse{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+.ul-navbar{
+  list-style-type: none;
+  text-align: right;
 }
+
+.li-navbar{
+  display: inline;
+}
+
+.button-main{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-main:hover{
+  background-color:#FFD4D4;
+}
+
+.a-main{
+  text-decoration:none;
+  color:#F7A4A4;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color:none;
+  
+  min-width: 100px;
+  border-width:2px;
+  border-style:solid;
+  border-color:white;
+  
+  text-align:left;
+}
+
+.a-secondary{
+  text-decoration: none;
+  color: #FEBE8C;
+  padding: 5px 10px 5px 10px ;
+  display: block;
+}
+
+.a-secondary:hover{
+  background-color:none;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn-main {
+background-color: none;
+}
+
+/* Nav Bar End */
 
 .title{
     font-family: 'Montserrat', sans-serif;
@@ -20,14 +79,9 @@
 /*Background image */
 body {
     background-image: url("Images/main4.jpg");
-  overflow: hidden;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: height: 1920px width: 1080px;
-  background-attachment: fixed;
+  min-height: 50%;
+  min-width: 100%;
   background-repeat: no-repeat;
-  background-position: top 0px center;
   }
 
 .intro{
@@ -44,19 +98,17 @@ body {
 
 .slide-right {
     width: 100%;
-    margin-left: 500px;
-    max-width: 600px;
-    display: flex;
+    overflow: hidden;
+    margin-left: 300px;
+    max-width: 500px
   }
   
   .slide-right h2 {
-    animation: 0.5s slide-up 1s forwards;
-      transform:translatey(600%);
-      color: white;
-      font-size: 30px;
+    animation: 2s slide-right 2s forwards;
+      transform:translateX(-100%);
   }
   
-  @keyframes slide-up {
+  @keyframes slide-right {
     to {
       transform:translateX(0);
     }
