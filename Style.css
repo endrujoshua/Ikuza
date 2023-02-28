@@ -17,13 +17,12 @@
     position: right;
     text-align: right;
 }
-
+/*Background image */
 body {
     background-image: url("Images/main4.jpg");
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    object-fit: cover;
+  min-height: 50%;
+  min-width: 100%;
+  background-repeat: no-repeat;
   }
 
 .intro{
