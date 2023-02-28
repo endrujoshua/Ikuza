@@ -1,17 +1,16 @@
 /* Nav Bar */
 .navbar-main{
   width: auto;
-  height:30px;
-  background-color: white;
 }
 
 .ul-navbar{
   list-style-type: none;
-  text-align: right;
+  text-align: center;
 }
 
 .li-navbar{
   display: inline;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .button-main{
@@ -21,11 +20,13 @@
 }
 
 .button-main:hover{
-  background-color:#FFD4D4;
+  background-color:rgba(247, 164, 164, 0.5);;
 }
 
 .a-main{
   text-decoration:none;
+  font-weight: bold;
+  font-size: 16px;
   color:#F7A4A4;
 }
 
@@ -40,6 +41,7 @@
   background-color:none;
   
   min-width: 100px;
+  width:auto;
   border-width:2px;
   border-style:solid;
   border-color:white;
@@ -49,6 +51,7 @@
 
 .a-secondary{
   text-decoration: none;
+  font-size: 15px;
   color: #FEBE8C;
   padding: 5px 10px 5px 10px ;
   display: block;
@@ -59,11 +62,11 @@
 }
 
 .dropdown:hover .dropdown-content {
-display: block;
+  display: block;
 }
 
 .dropdown:hover .dropbtn-main {
-background-color: none;
+  background-color: none;
 }
 
 /* Nav Bar End */
