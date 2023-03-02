@@ -11,19 +11,12 @@ const images = [
         }
   }, 4000);*/
 
-  function changebg() {
-    switch (i =this.scrollY){
-      case  i>3000:
-        document.body.style.backgroundImage= "url(Images/main4.jpg)"
-        break;
-        case 1000<i<2000:
-        document.body.style.backgroundImage= "url(Images/main2.jpg)"
-        break;
-        case 2000<i<3000:
-        document.body.style.backgroundImage= "url(Images/main3.jpg)"
-        break;
-        default:
-          document.body.style.backgroundImage= "url(Images/main1.jpg)"
-    }
-  };
-  window.addEventListener("scroll", changebg , false);
+
+  var scroll = 0;
+  var conponent = document.body.style.backgroundImage;
+  var windowHeight = window.innerHeight;
+  window.onscroll = myFunction();
+
+function myFunction() {
+  window.alert("start");
+};

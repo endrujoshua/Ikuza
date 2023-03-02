@@ -1,6 +1,7 @@
 /* Full Nav Bar for PC*/
 .navbar-main{
   width: 100%;
+  float:left;
   position: fixed;
 }
 
@@ -82,11 +83,15 @@
 
 @media only screen and (min-width: 992px) {
   .navbar-secondary {display: none;}
+  
 } 
 
 /* Nav for Mobile and Tablet  */
 .navbar-secondary{
   width: 100%;
+  height: 40px;
+  position:fixed;
+  float: right;
 }
 
 /* Collapse Button*/
@@ -95,6 +100,7 @@
   border: none;
   cursor: pointer;
   float: right;
+  margin-left: 45%;
   position: fixed;
 }
 
@@ -163,8 +169,6 @@ body {
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-height: 100vh;
-background-size: height: 100vh width: 1080px;
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: top 0px center;
@@ -183,21 +187,21 @@ background-position: top 0px center;
 }
 
 .slide-right h2 {
-  animation: 0.5s slide-up 1s forwards;
-    transform:translatey(600%);
+  animation: 3s slide-up 1s forwards;
     color: white;
+    opacity: 0;
     font-size: 35px;
 }
 
 @keyframes slide-up {
-  to {
-    transform:translateX(0);
+  0% { opacity: 0; 
+  }
+  100% {
+    opacity: 1;
+  } 
+  to{
 
   }
-}
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 /*Animation for H2 and container */
 .flex-parent{
@@ -215,6 +219,6 @@ background-position: top 0px center;
   position: relative;
   padding: 10px;
 height: 60%;
-background-color: rgba(54, 54, 54, 0.5);
 transform: perspective(20em) rotateY(-5deg);
+background-color: rgba(0, 0, 0, 0.5);
 }
