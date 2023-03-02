@@ -12,14 +12,14 @@ const images = [
   }, 4000);*/
 
   function changebg() {
-    switch (this.scrollY){
-      case 1000:
+    switch (i =this.scrollY){
+      case  i>3000:
         document.body.style.backgroundImage= "url(Images/main4.jpg)"
         break;
-        case 2000:
+        case 1000<i<2000:
         document.body.style.backgroundImage= "url(Images/main2.jpg)"
         break;
-        case 3000:
+        case 2000<i<3000:
         document.body.style.backgroundImage= "url(Images/main3.jpg)"
         break;
         default:
