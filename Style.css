@@ -74,93 +74,107 @@
 .dropdown:hover .dropbtn-main {
   background: none;
 }
+/*Layout of the website */
+.content {
+  width: 100%;
+height: 100%;
+}
+.side-bar{
+  width: 18.5%;
+  height: 100vh;
+  float: right;
+}
+.side-bar2{
+  width: 81.5%;
+  height: 100%;
+  float: left;
 
-/* Responsive Design for navbar for tablet devices*/
-@media only screen and (min-width: 992px) {
-  .second-navbar {display: none;}
 }
 
-@media only screen and (max-width: 992px) {
-  .navbar-main {display:none;}
+/* Layout sidebar*/
+.Heading{
+  float: right;
+  width: 100%;
+  margin-top: 80%;
 }
-
-/* Nav Bar for Mobile and Tablet*/
-.second-navbar{
-  width: auto;
-}
-
-.second-ul{
-  list-style-type: none;
-  text-align: right;
-}
-
-/* Second Button */
-.second-button{
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.second-button:hover{
-  background-color:rgba(247, 164, 164, 0.5);
-}
-
-/* End of Navbar*/
-
 .title{
+  display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 60px;
     color:#F55050;
-    margin: 200px 20px 0 0;
-    position: right;
-    text-align: right;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.intro{
+  position:relative;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  font-size: 30px;
+  color:#FDD36A;
+  margin: auto;
+  text-align: center;
 }
 /*Background image */
 body {
-  background-image: url("Images/main4.jpg");
-overflow: hidden;
+  background-image: url("Images/main1.jpg");
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-background-size: height: 1920px width: 1080px;
+height: 100vh;
+background-size: height: 100vh width: 1080px;
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: top 0px center;
 }
-
-.intro{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  color:#FDD36A;
-  margin: -15px 20px 0px 0;
-  position: right;
-  text-align: right;
+/*testing */
+.container{
+  height: 100vh;
 }
+
 
 /*Animation */
 
 .slide-right {
-  width: 100%;
-  margin-left: 500px;
-  max-width: 600px;
-  display: flex;
+  margin-top: 18.3%;
+  float:right;
 }
 
 .slide-right h2 {
   animation: 0.5s slide-up 1s forwards;
     transform:translatey(600%);
     color: white;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 @keyframes slide-up {
   to {
     transform:translateX(0);
+
   }
+}
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 /*Animation for H2 and container */
 .flex-parent{
-display: flex;
+  float: right;  
+  border:dashed 3px;
+  padding: 20px;
+  stroke-dasharray: 6,30px;
+
+  border-left: 0px;
+  border-right: 0px;
+  border-color: white;
+  border-radius: 5px;
+  width: 37%;
+  margin-right: 30px;
+  position: relative;
+  padding: 10px;
+height: 60%;
+background-color: rgba(54, 54, 54, 0.5);
+transform: perspective(20em) rotateY(-5deg);
 }
