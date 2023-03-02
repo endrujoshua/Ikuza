@@ -74,6 +74,13 @@
 .dropdown:hover .dropbtn-main {
   background: none;
 }
+
+/* */
+@media only screen and (max-width: 992px) {
+  .navbar-main {display:none;}
+
+/* End of Nav Bar */
+
 /*Layout of the website */
 .content {
   width: 100%;
