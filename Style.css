@@ -74,6 +74,16 @@
   background-color: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+/* Responsive website */
+@media only screen and (max-width: 992px) {
+  .navbar-main {display:none;}
+
+/* End of Nav Bar */
+
+>>>>>>> a94656b3eb4482746e244658db98cb9f11b0d6a5
 /*Layout of the website */
 .content {
   width: 100%;
