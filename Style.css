@@ -73,6 +73,7 @@
 .dropdown:hover .dropbtn-main {
   background-color: none;
 }
+<<<<<<< HEAD
 /*Layout of the website */
 .content {
   width: 100%;
@@ -104,6 +105,10 @@ height: 100%;
 .second-button:hover{
   background-color:rgba(247, 164, 164, 0.5);
 }
+=======
+
+
+>>>>>>> parent of e29dfa4 (eeweger)
 .title{
   display: inline-block;
     font-family: 'Montserrat', sans-serif;
