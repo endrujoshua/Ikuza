@@ -1,6 +1,7 @@
-/* Nav Bar */
+/* Full Nav Bar for PC*/
 .navbar-main{
   width: auto;
+  position: fixed;
 }
 
 .ul-navbar{
@@ -71,9 +72,40 @@
 }
 
 .dropdown:hover .dropbtn-main {
-  background-color: none;
+  background: none;
 }
 
+/* Responsive Design for navbar for tablet devices*/
+@media only screen and (min-width: 992px) {
+  .second-navbar {display: none;}
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-main {display:none;}
+}
+
+/* Nav Bar for Mobile and Tablet*/
+.second-navbar{
+  width: auto;
+}
+
+.second-ul{
+  list-style-type: none;
+  text-align: right;
+}
+
+/* Second Button */
+.second-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.second-button:hover{
+  background-color:rgba(247, 164, 164, 0.5);
+}
+
+/* End of Navbar*/
 
 .title{
     font-family: 'Montserrat', sans-serif;
