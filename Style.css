@@ -1,6 +1,7 @@
-/* Nav Bar */
+/* Full Nav Bar for PC*/
 .navbar-main{
   width: auto;
+  position: fixed;
 }
 
 .ul-navbar{
@@ -71,7 +72,7 @@
 }
 
 .dropdown:hover .dropbtn-main {
-  background-color: none;
+  background: none;
 }
 /*Layout of the website */
 .content {
