@@ -1,6 +1,6 @@
 /* Full Nav Bar for PC*/
 .navbar-main{
-  width: auto;
+  width: 100%;
   position: fixed;
 }
 
@@ -74,6 +74,43 @@
 .dropdown:hover .dropbtn-main {
   background: none;
 }
+
+/* Responsive to PC */
+@media only screen and (max-width: 992px) {
+  .navbar-main {display: none;}
+} 
+
+@media only screen and (min-width: 992px) {
+  .navbar-secondary {display: none;}
+} 
+
+/* Nav for Mobile and Tablet  */
+.nav-secondary{
+  width: 100%;
+}
+
+/* Collapse Button*/
+.dropbtn-secondary{
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+  position: fixed;
+}
+
+.dropbtn-secondary:hover{
+  background-color:rgba(247, 164, 164, 0.5);
+}
+
+.ul-2-navbar{
+  list-style-type: none;
+  text-align: center;
+}
+
+
+
+
+/* Nav Bar End */
 
 
 /*Layout of the website */
