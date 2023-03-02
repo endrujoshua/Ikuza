@@ -1,7 +1,6 @@
-/* Full Nav Bar for PC*/
+/* Nav Bar */
 .navbar-main{
   width: auto;
-  position: fixed;
 }
 
 .ul-navbar{
@@ -72,7 +71,7 @@
 }
 
 .dropdown:hover .dropbtn-main {
-  background: none;
+  background-color: none;
 }
 /*Layout of the website */
 .content {
@@ -84,18 +83,26 @@ height: 100%;
   height: 100vh;
   float: right;
 }
-.side-bar2{
-  width: 81.5%;
-  height: 100%;
-  float: left;
 
+/* Nav Bar for Mobile and Tablet*/
+.second-navbar{
+  width: auto;
 }
 
-/* Layout sidebar*/
-.Heading{
-  float: right;
-  width: 100%;
-  margin-top: 80%;
+.second-ul{
+  list-style-type: none;
+  text-align: right;
+}
+
+/* Second Button */
+.second-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.second-button:hover{
+  background-color:rgba(247, 164, 164, 0.5);
 }
 .title{
   display: inline-block;
