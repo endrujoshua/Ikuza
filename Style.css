@@ -75,7 +75,7 @@
   background: none;
 }
 
-/* */
+/* Responsive website */
 @media only screen and (max-width: 992px) {
   .navbar-main {display:none;}
 
