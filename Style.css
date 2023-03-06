@@ -5,46 +5,147 @@
   position: fixed;
 }
 
-.ul-main{
+.ul-nav-main{
   list-style-type: none;
   text-align: center;
 }
 
-.li-main{
+.li-nav-main{
   display: inline;
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Button no Dropdown */
-.button-main{
+.button-nav-main{
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.button-main:hover{
-  background-color:rgba(247, 164, 164, 0.5);
+.button-nav-main:hover{
+  background-color:rgba(247, 164, 164, 0.25);
 }
 
 /* Hyperlink */
-.a-main{
+.a-nav-main{
   text-decoration:none;
   font-weight: bold;
   font-size: 16px;
   color:#F7A4A4;
 }
 
-.a-main-dropdown:hover{
-  background-color:rgba(247, 164, 164, 0.5);
-}
-
 /* Dropdown */
-.dropdown-main{
+.dropdown-nav-main{
   position: relative;
   display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content-nav-main{
+  display: none;
+  position: absolute;
+  background-color:none;
+  
+  border-width:2px;
+  border-style:solid;
+  border-color:white;
+  
+  text-align:left;
+}
+
+/* Dropdown Hover */
+
+.dropdown-nav-main:hover .dropdown-content-nav-main {
+  display: block;
+}
+
+/* Dropdown Hyperlink */
+.a-dropdown-nav-main{
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FEBE8C;
+  padding: 5px 10px 5px 10px ;
+  display: block;
+}
+
+.a-dropdown-nav-main:hover{
+  background-color:rgba(247, 164, 164, 0.25);
+}
+
+/* Responsive to PC */
+@media only screen and (max-width: 992px) {
+  .navbar-main {display: none;}
+} 
+
+@media only screen and (min-width: 992px) {
+  .navbar-secondary {display: none;}
+} 
+
+/* Nav for Mobile and Tablet  */
+.navbar-secondary{
+  width: 100%;
+  position:fixed;
+}
+
+/* Collapse Button */
+.collapse-btn-nav-secondary{
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+.collapse-btn-nav-secondary:hover{
+  background-color:rgba(247, 164, 164, 0.25);
+}
+
+/* Collapse Container */
+.collapse-container-nav-secondary{
+  display: none;
+  position: relative;
+  float: right;
+}
+
+/* Collapse Hover */
+.navbar-secondary:hover .collapse-container-nav-secondary {
+  display: block;
+}
+
+/* Inside container */
+.ul-nav-secondary{
+  list-style-type: none;
+  text-align: left;
+}
+
+.li-nav-secondary{
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px 10px 5px 10px ;
+}
+
+/* Button no Dropdown*/
+.button-nav-secondary{
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button-nav-secondary:hover{
+  background-color:rgba(247, 164, 164, 0.25);
+}
+
+/* Hyperlink */
+.a-nav-secondary{
+  text-decoration:none;
+  font-weight: bold;
+  font-size: 16px;
+  color:#F7A4A4;
+}
+
+/* Dropdown */
+.dropdown-nav-secondary{
   display: none;
   position: absolute;
   background-color:none;
@@ -57,85 +158,13 @@
   text-align:left;
 }
 
-/* Dropdown Hover */
-
-.dropdown-main:hover .dropdown-content {
-  display: block;
-}
-
-/* Dropdown Hyperlink */
-.a-main-dropdown{
+/* Dropdown Content */
+.a-dropdown-nav-secondary{
   text-decoration: none;
   font-size: 12px;
   color: #FEBE8C;
   padding: 5px 10px 5px 10px ;
   display: block;
-}
-
-/* Responsive to PC */
-@media only screen and (max-width: 992px) {
-  .navbar-main {display: none;}
-} 
-
-@media only screen and (min-width: 992px) {
-  .collapse-secondary {display: none;}
-} 
-
-/* Nav for Mobile and Tablet  */
-.collapse-secondary{
-  width: 100%;
-  position:fixed;
-}
-
-/* Collapse Button */
-.collapse-btn{
-  float: right;
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  margin-top: 5px;
-  margin-right: 20px;
-}
-
-/* Collapse Container */
-.collapse-container{
-  display: none;
-  position: relative;
-  float: right;
-}
-
-/* Collapse Hover */
-.collapse-secondary:hover .collapse-container {
-  display: block;
-}
-
-/* Inside container */
-.ul-secondary{
-  list-style-type: none;
-  text-align: left;
-}
-
-.li-secondary{
-  font-family: 'Montserrat', sans-serif;
-  padding: 5px 10px 5px 10px ;
-}
-
-.button-secondary{
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.a-secondary{
-  text-decoration:none;
-  font-weight: bold;
-  font-size: 16px;
-  color:#F7A4A4;
-}
-
-.a-secondary:hover{
-  background-color:rgba(247, 164, 164, 0.5);
 }
 
 /* Nav Bar End */
