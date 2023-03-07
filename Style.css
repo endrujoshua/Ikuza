@@ -146,6 +146,11 @@
 
 /* Dropdown */
 .dropdown-nav-secondary{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-nav-secondary{
   display: none;
   position: absolute;
   background-color:none;
@@ -166,6 +171,18 @@
   padding: 5px 10px 5px 10px ;
   display: block;
 }
+
+.a-dropdown-nav-secondary:hover{
+  background-color:rgba(247, 164, 164, 0.25);
+}
+
+/* Dropdown Hover */
+.dropdown-nav-secondary:hover .dropdown-content-nav-secondary{
+  display: block;
+}
+
+/* Social Media Icon */
+
 
 /* Nav Bar End */
 
