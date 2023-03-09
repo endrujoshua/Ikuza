@@ -10,7 +10,6 @@ const images = [
           i =  0;
         }
   }, 4000);*/
-
 function myFunction() {
   if(this.scrollY <2000){
   document.body.style.backgroundImage = this.scrollY > 1000
@@ -21,6 +20,21 @@ function myFunction() {
     document.body.style.backgroundImage = this.scrollY > 3000
      ? "url(Images/main4.jpg)"
      : "url(Images/main3.jpg)";
+  }
+var meter = document.getElementsByClassName("meter");
+w
+  if(this.scrollY<1000){
+
+        meter[0].style.backgroundColor= "rgba(247, 164, 164, 1 )";
+  }
+  else if (this.scrollY<2000){
+        document.getElementById("sec2").style.backgroundColor= "rgba(247, 164, 164, 1)";}
+   else if(this.scrollY<3000){
+        document.getElementById("sec3").style.backgroundColor= "rgba(247, 164, 164, 1)";
+   }
+    else{
+        document.getElementById("sec4").style.backgroundColor= "rgba(247, 164, 164, 1)";
+
   }
 };
 
