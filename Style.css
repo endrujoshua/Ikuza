@@ -316,10 +316,9 @@
 .Heading{
   float: right;
   width: 100%;
-  margin-top: 80%;
+  vertical-align: center;
 }
 .title{
-  display: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
@@ -328,17 +327,6 @@
   width: 100%;
   text-align: center;
   vertical-align: center;
-}
-.intro{
-  display: none;
-  position:relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  width: 100%;
-  font-size: 30px;
-  color:#FDD36A;
-  margin: auto;
-  text-align: center;
 }
 /*Background image */
 body {
@@ -352,7 +340,7 @@ background-position: top 0px center;
 }
 /*testing */
 .container{
-  height: 100vh;
+  height: 1000px;
 }
 
 
