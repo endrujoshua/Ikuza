@@ -11,12 +11,17 @@ const images = [
         }
   }, 4000);*/
 
-
-  var scroll = 0;
-  var conponent = document.body.style.backgroundImage;
-  var windowHeight = window.innerHeight;
-  window.onscroll = myFunction();
-
 function myFunction() {
-  window.alert("start");
+  if(this.scrollY <2000){
+  document.body.style.backgroundImage = this.scrollY > 1000
+     ? "url(Images/main1.jpg)"
+     : "url(Images/main2.jpg)";
+  }
+  else{
+    document.body.style.backgroundImage = this.scrollY > 3000
+     ? "url(Images/main3.jpg)"
+     : "url(Images/main4.jpg)";
+  }
 };
+
+window.addEventListener("scroll", myFunction , false);
