@@ -14,13 +14,13 @@ const images = [
 function myFunction() {
   if(this.scrollY <2000){
   document.body.style.backgroundImage = this.scrollY > 1000
-     ? "url(Images/main1.jpg)"
-     : "url(Images/main2.jpg)";
+     ? "url(Images/main2.jpg)"
+     : "url(Images/main1.jpg)";
   }
   else{
     document.body.style.backgroundImage = this.scrollY > 3000
-     ? "url(Images/main3.jpg)"
-     : "url(Images/main4.jpg)";
+     ? "url(Images/main4.jpg)"
+     : "url(Images/main3.jpg)";
   }
 };
 
