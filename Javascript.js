@@ -24,7 +24,7 @@ function myFunction() {
   }
 var meter = document.getElementsByClassName("meter");
 var i = 0;
-  if(this.scrollY<1000){
+  if(this.scrollY<Y*0.75){
     i= Math.floor(this.scrollY/1000);
         for(let x=0;x<meter.length;x++){
             if(i== x){
@@ -35,7 +35,7 @@ var i = 0;
             }
         }
   }
-  else if (1000<this.scrollY<2000){
+  else if (Y*0.75<this.scrollY<Y*1.75){
     i= Math.floor(this.scrollY/1000);
     for(let x=0;x<meter.length;x++){
       if(i== x){
@@ -46,7 +46,7 @@ var i = 0;
       }
   }
 }
-   else if(2000<this.scrollY<3000){
+   else if(Y*1.75<this.scrollY<Y*2.75){
     i= Math.floor(this.scrollY/1000);
     for(let x=0;x<meter.length;x++){
       if(i== x){
