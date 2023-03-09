@@ -22,18 +22,51 @@ function myFunction() {
      : "url(Images/main3.jpg)";
   }
 var meter = document.getElementsByClassName("meter");
-w
+var i = 0;
   if(this.scrollY<1000){
-
-        meter[0].style.backgroundColor= "rgba(247, 164, 164, 1 )";
+    i= Math.floor(this.scrollY/1000);
+        for(let x=0;x<meter.length;x++){
+            if(i== x){
+              meter[x].style.backgroundColor= "rgba(247, 164, 164, 1 )";
+            }
+            else{
+              meter[x].style.backgroundColor= "rgba(247, 164, 164, 0.25 )";
+            }
+        }
   }
-  else if (this.scrollY<2000){
-        document.getElementById("sec2").style.backgroundColor= "rgba(247, 164, 164, 1)";}
-   else if(this.scrollY<3000){
-        document.getElementById("sec3").style.backgroundColor= "rgba(247, 164, 164, 1)";
+  else if (1000<this.scrollY<2000){
+    i= Math.floor(this.scrollY/1000);
+    for(let x=0;x<meter.length;x++){
+      if(i== x){
+        meter[x].style.backgroundColor= "rgba(247, 164, 164, 1 )";
+      }
+      else{
+        meter[x].style.backgroundColor= "rgba(247, 164, 164, 0.25 )";
+      }
+  }
+}
+   else if(2000<this.scrollY<3000){
+    i= Math.floor(this.scrollY/1000);
+    for(let x=0;x<meter.length;x++){
+      if(i== x){
+        meter[x].style.backgroundColor= "rgba(247, 164, 164, 1 )";
+      }
+      else{
+        meter[x].style.backgroundColor= "rgba(247, 164, 164, 0.25 )";
+      }
+  }
    }
     else{
-        document.getElementById("sec4").style.backgroundColor= "rgba(247, 164, 164, 1)";
+
+      i= Math.floor(this.scrollY/1000);
+      for(let x=0;x<meter.length;x++){
+        if(i== x){
+          meter[x].style.backgroundColor= "rgba(247, 164, 164, 1 )";
+        }
+        else{
+          meter[x].style.backgroundColor= "rgba(247, 164, 164, 0.25 )";
+        }
+    } 
 
   }
 };
