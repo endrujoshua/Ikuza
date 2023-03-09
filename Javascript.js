@@ -12,13 +12,13 @@ const images = [
   }, 4000);*/
   var Y = document.documentElement.clientHeight 
 function myFunction() {
-  if(this.scrollY <Y*2){
-  document.body.style.backgroundImage = this.scrollY > Y
+  if(this.scrollY <Y*1.75){
+  document.body.style.backgroundImage = this.scrollY > Y *0.75
      ? "url(Images/main2.jpg)"
      : "url(Images/main1.jpg)";
   }
   else{
-    document.body.style.backgroundImage = this.scrollY > Y*3
+    document.body.style.backgroundImage = this.scrollY > Y*2.75
      ? "url(Images/main4.jpg)"
      : "url(Images/main3.jpg)";
   }
