@@ -107,7 +107,7 @@
 /* Collapse Container */
 .collapse-container-nav-secondary{
   display: none;
-  position: relative;
+  position: relative;0
   float: right;
 }
 
@@ -298,15 +298,13 @@
 
 /*Layout of the website */
 .right-side-bar{
-  width: 18.5%;
+  width: 18.5vw;
   height: 100vh;
   float: right;
-  margin: 0px;
 }
 
 .side-bar2{
   width: 81.5%;
-  margin: 0px;
   height: 100vh;
   float: left;
 }
@@ -337,8 +335,6 @@ background-position: top 0px center;
 
 /* Container */
 .container{
-  margin: 0px;
-  padding: 0px;
   height: 100vh;
   width: 100%;
 }
