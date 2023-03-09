@@ -324,9 +324,7 @@
   color:#F55050;
   
   text-align: center;
-  position: fixed;
   margin-top: 40vh;
-  margin-right: 10px;
 }
 
 /*Background image */
@@ -339,7 +337,8 @@ background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: top 0px center;
 }
-/*testing */
+
+/* Container */
 .container{
   height: 100vh;
 }
