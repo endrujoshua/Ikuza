@@ -180,10 +180,6 @@
 
 /* Social Media Icon */
 
-.li-sosmed-nav{
-  float: right;
-}
-
 /* Hyperlink */
 .a-sosmed-dropdown-nav{
   text-decoration: none;
@@ -205,6 +201,7 @@
   border: none;
   cursor: pointer;
   padding: 5px 0 5px 0;
+  float: center;
 }
 
 .p1-btn-sosmed-nav:hover{
@@ -223,7 +220,6 @@
   border-color:white;
   
   text-align:left;
-  float: left;
 }
 
 /* Hover */
@@ -238,6 +234,7 @@
   border: none;
   cursor: pointer;
   padding: 5px 0 5px 0;
+  float: center;
 }
 
 .p2-btn-sosmed-nav:hover{
@@ -256,7 +253,6 @@
   border-color:white;
   
   text-align:left;
-  float: left;
 }
 
 /* Hover */
@@ -271,6 +267,7 @@
   border: none;
   cursor: pointer;
   padding: 5px 0 5px 0;
+  float: center;
 }
 
 .p3-btn-sosmed-nav:hover{
@@ -289,7 +286,6 @@
   border-color:white;
   
   text-align:left;
-  float: left;
 }
 
 /* Hover */
