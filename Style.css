@@ -319,27 +319,15 @@
   margin-top: 80%;
 }
 .title{
-  display: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
   color:#F55050;
-  margin: auto;
   width: 100%;
   text-align: center;
   vertical-align: center;
 }
-.intro{
-  display: none;
-  position:relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  width: 100%;
-  font-size: 30px;
-  color:#FDD36A;
-  margin: auto;
-  text-align: center;
-}
+
 /*Background image */
 body {
   background-image: url("Images/main1.jpg");
