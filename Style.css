@@ -130,6 +130,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .btn-nav-secondary:hover{
@@ -293,6 +294,10 @@
   display: block;
 }
 
+@media only screen and (max-width:992px) {
+  .title {display: none;}
+}
+
 /* Nav Bar End */
 
 /*Layout of the website */
@@ -300,21 +305,17 @@
   width: 100%;
   height: 100%;
 }
-.side-bar{
-  width: 18.5%;
-  height: 100vh;
-  float: right;
-}
 .side-bar2{
   width: 81.5%;
   height: 100vh;
   float: left;
 }
 
-/* Layout sidebar*/
-.heading{
-  width: 100%;
-  height: 100%;
+/* Right sidebar*/
+.right-side-bar{
+  width: 18.5%;
+  height: 100vh;
+  float: right;
 }
 
 .title{
@@ -323,10 +324,11 @@
   font-size: 60px;
   color:#F55050;
   
+  position: static;
   text-align: center;
-  position: fixed;
+  float: center;
   margin-top: 40vh;
-  margin-right: 10px;
+  margin-right:5%;
 }
 
 /*Background image */
@@ -338,10 +340,6 @@ body {
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: top 0px center;
-}
-/*testing */
-.container{
-  height: 100vh;
 }
 
 
