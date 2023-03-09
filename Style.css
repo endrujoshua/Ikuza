@@ -309,23 +309,24 @@
   width: 81.5%;
   height: 100vh;
   float: left;
-
 }
 
 /* Layout sidebar*/
-.Heading{
-  float: right;
+.heading{
   width: 100%;
-  margin-top: 80%;
+  height: 100%;
 }
+
 .title{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
   color:#F55050;
-  width: 100%;
+  
   text-align: center;
-  vertical-align: center;
+  position: fixed;
+  margin-top: 40vh;
+  margin-right: 10px;
 }
 
 /*Background image */
