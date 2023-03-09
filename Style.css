@@ -130,6 +130,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .btn-nav-secondary:hover{
@@ -293,6 +294,10 @@
   display: block;
 }
 
+@media only screen and (max-width:992px) {
+  .title {display: none;}
+}
+
 /* Nav Bar End */
 
 /*Layout of the website */
@@ -312,21 +317,17 @@
 }
 
 /* Layout sidebar*/
-.heading{
-  width: 100%;
-  height: 100%;
-}
-
 .title{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
   color:#F55050;
   
+  position: static;
   text-align: center;
-  position: fixed;
+  float: center;
   margin-top: 40vh;
-  margin-right: 10px;
+  margin-right:5%;
 }
 
 /*Background image */
