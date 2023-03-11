@@ -105,18 +105,12 @@
 }
 
 /* Collapse Container */
-.collapse-container-nav-secondary{
+#collapse-container-nav-secondary{
   display: none;
   position: relative;
   float: right;
 }
 
-/* Collapse Hover */
-.navbar-secondary:hover .collapse-container-nav-secondary {
-  display: block;
-}
-
-/* Inside container */
 .ul-nav-secondary{
   list-style-type: none;
 }
@@ -146,7 +140,7 @@
 }
 
 /* Dropdown */
-.dropdown-content-nav-secondary{
+#dropdown-content-nav-secondary{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -172,11 +166,6 @@
 
 .a-dropdown-nav-secondary:hover{
   background-color:rgba(247, 164, 164, 0.75);
-}
-
-/* Dropdown Hover */
-.dropdown-nav-secondary:hover .dropdown-content-nav-secondary{
-  display: block;
 }
 
 /* Social Media Icon */
@@ -210,7 +199,7 @@
 }
 
 /* Dropdown */
-.p1-dropdown-content-sosmed-nav{
+#p1-dropdown-content-sosmed-nav{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -221,11 +210,6 @@
   border-color:white;
   
   text-align:left;
-}
-
-/* Hover */
-.p1-dropdown-sosmed-nav:hover .p1-dropdown-content-sosmed-nav{
-  display: block;
 }
 
 /* 2 */
@@ -243,7 +227,7 @@
 }
 
 /* Dropdown */
-.p2-dropdown-content-sosmed-nav{
+#p2-dropdown-content-sosmed-nav{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -254,11 +238,6 @@
   border-color:white;
   
   text-align:left;
-}
-
-/* Hover */
-.p2-dropdown-sosmed-nav:hover .p2-dropdown-content-sosmed-nav{
-  display: block;
 }
 
 /* 3 */
@@ -276,7 +255,7 @@
 }
 
 /* Dropdown */
-.p3-dropdown-content-sosmed-nav{
+#p3-dropdown-content-sosmed-nav{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -289,17 +268,12 @@
   text-align:left;
 }
 
-/* Hover */
-.p3-dropdown-sosmed-nav:hover .p3-dropdown-content-sosmed-nav{
-  display: block;
-}
-
 @media only screen and (max-width: 600px) {
-  .collapse-container-nav-secondary {float: left; width: 100%;}
-  .dropdown-content-nav-secondary {text-align: center;}
-  .p1-dropdown-content-sosmed-nav {text-align: center;}
-  .p2-dropdown-content-sosmed-nav {text-align: center;}
-  .p3-dropdown-content-sosmed-nav {text-align: center;}
+  #collapse-container-nav-secondary {float: left; width: 100%; margin-left: 2.5%;}
+  #dropdown-content-nav-secondary {text-align: center;}
+  #p1-dropdown-content-sosmed-nav {text-align: center;}
+  #p2-dropdown-content-sosmed-nav {text-align: center;}
+  #p3-dropdown-content-sosmed-nav {text-align: center;}
 } 
 
 /* Nav Bar End */
