@@ -117,7 +117,6 @@
 
 .li-nav-secondary{
   font-family: 'Montserrat', sans-serif;
-  padding: 0 0 10px 0;
 }
 
 /* Button no Dropdown*/
@@ -125,6 +124,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .btn-nav-secondary:hover{
@@ -160,7 +160,7 @@
   color: #1A0000;
   font-size: 14px;
 
-  padding: 5px 0 5px 5px ;
+  padding: 5px 0 5px 5px;
   display: block;
 }
 
@@ -177,8 +177,8 @@
   color: #1A0000;
   font-size: 16px;
 
-  padding: 5px 0 5px 5px ;
   display: block;
+  padding: 5px 0 5px 5px;
 }
 
 .a-sosmed-dropdown-nav:hover{
@@ -190,7 +190,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 0 5px 0;
+  margin: 5px 0;
   float: center;
 }
 
@@ -218,7 +218,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 0 5px 0;
+  margin: 5px 0;
   float: center;
 }
 
@@ -246,7 +246,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 0 5px 0;
+  margin: 5px 0;
   float: center;
 }
 
@@ -278,32 +278,51 @@
 
 /* Nav Bar End */
 
-/*Layout of the website */
-/* Right Side Bar */
+/* Layout of The Website */
+/* Right Side Container */
 .right-side-bar{
   width: 18.5%;
   height: 100vh;
   float: right;
 }
 
-.side-bar2{
-  width: 81.5%;
-  height: 100vh;
-  float: left;
-}
-
-/* Right sidebar*/
-
 .right-side-bar-title{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
-  color:#F55050;
+  color:#E98EAD;
   
   text-align: center;
   margin-top: 40vh;
   position:static;
 }
+
+/* Left Side Scroll Bar */
+.side-bar2{
+  width: 6.5%;
+  height: 100vh;
+  float: left;
+}
+
+/* Left Side Text Box */
+.left-side-textbox{
+  width: 20%;
+  height: 100vh;
+  float: left;
+}
+
+/* Title */
+.title-textbox{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color:#F55050;
+
+  text-align: left;
+  margin-top: 40vh;
+  position:static;
+}
+
 
 /*Background image */
 body {
@@ -321,7 +340,6 @@ background-position: top 0px center;
   height: 100vh;
   width: 100%;
 }
-
 
 
 /*Animation */
