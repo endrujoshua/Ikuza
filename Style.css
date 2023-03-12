@@ -293,7 +293,7 @@
   color:#E96479;
   
   text-align: center;
-  margin-top: 45vh;
+  margin-top: 55vh;
   position:static;
 }
 
@@ -314,25 +314,21 @@
 /* Title */
 .title-textbox{
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
   font-size: 60px;
   color:#F55050;
 
   text-align: left;
-  margin-top: 45vh;
-  margin-bottom: 0;
-  padding: 0;
+  margin-top: 55vh;
   position:static;
 }
 
 /* Description */
-#title-dropdown{
+.title-dropdown{
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color:#E8D2A6;
 
   text-align: left;
-  position: relative;
 }
 
 
