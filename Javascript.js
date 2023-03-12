@@ -80,7 +80,6 @@ function sosmed3_btn(){
     dropdown_content_btn3.style.display = "none";
   }
 }
-
 /* Navbar End */
 
 const images = [

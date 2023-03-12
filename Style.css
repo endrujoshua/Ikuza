@@ -290,23 +290,23 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
-  color:#E98EAD;
+  color:#E96479;
   
   text-align: center;
-  margin-top: 40vh;
+  margin-top: 45vh;
   position:static;
 }
 
 /* Left Side Scroll Bar */
 .side-bar2{
-  width: 6.5%;
+  width: 7.5%;
   height: 100vh;
   float: left;
 }
 
 /* Left Side Text Box */
 .left-side-textbox{
-  width: 20%;
+  width: 30%;
   height: 100vh;
   float: left;
 }
@@ -319,8 +319,20 @@
   color:#F55050;
 
   text-align: left;
-  margin-top: 40vh;
+  margin-top: 45vh;
+  margin-bottom: 0;
+  padding: 0;
   position:static;
+}
+
+/* Description */
+#title-dropdown{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color:#E8D2A6;
+
+  text-align: left;
+  position: relative;
 }
 
 
