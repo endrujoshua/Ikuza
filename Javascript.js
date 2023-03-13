@@ -15,12 +15,13 @@ function collapse_btn(){
     dropdown_content_btn2.style.display = "none";
     dropdown_content_btn3.style.display = "none";
   }
-  var title_textbox = document.getElementsByClassName("title-textbox");
-  var description_textbox = document.getElementsByClassName("description-textbox");
   if (window.innerWidth < 600 && collapse_content.style.display == "block"){
+      var title_textbox = document.getElementsByClassName("title-textbox");
+  var description_textbox = document.getElementsByClassName("description-textbox");
     console.debug("True");
-    title_textbox.style.display = "none";
-    description_textbox.style.display = "none";
+    console.debug(title_textbox);
+    title_textbox[0].style.display = "none";
+    description_textbox[0].style.display = "none";
   }
 }
 

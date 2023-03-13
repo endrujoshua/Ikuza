@@ -319,7 +319,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   color:#F55050;
-
+  display: block;
   text-align: left;
   margin-top: 50vh;
   position:static;
@@ -330,7 +330,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color:#E8D2A6;
-
+display: block;
   text-align: left;
 }
 
