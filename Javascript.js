@@ -24,6 +24,7 @@ function collapse_btn(){
     title_textbox.style.display = "none";
     description_textbox.style.display = "none";
   } 
+  /* Unide Textbox on toggle */
   if (window.innerWidth < 600 && collapse_content.style.display === "none"){
     var title_textbox = document.getElementById("title-textbox");
     var description_textbox = document.getElementById("description-textbox");
