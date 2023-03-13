@@ -125,8 +125,11 @@ function ChangeBackground() {
     body.style.backgroundImage = "url('Images/main1.jpg')";
   } else if (currentPosition >= maxHeight && currentPosition <= maxHeight*2) {
     body.style.backgroundImage = "url('Images/main2.jpg')";
-  } else {
+  } else if (currentPosition >= maxHeight*2 && currentPosition <= maxHeight*3) {
     body.style.backgroundImage = "url('Images/main3.jpg')";
+  }
+  else{
+    body.style.backgroundImage = "url('Images/main4.jpg')"
   }
 
 };
