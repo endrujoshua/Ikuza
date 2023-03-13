@@ -79,28 +79,19 @@ const images = [
         }
   }, 4000);*/
   var Y = document.documentElement.clientHeight 
-function myFunction() {
-  const scrollPosition = this.scrollY;
-const body = document.body;
-
-const backgroundImage = scrollPosition < 2000
-  ? (scrollPosition > 1000 ? "url(Images/main2.jpg)" : "url(Images/main1.jpg)")
-  : (scrollPosition > 3000 ? "url(Images/main4.jpg)" : "url(Images/main3.jpg)");
-
-body.style.backgroundImage = backgroundImage;
-var meter = document.getElementsByClassName("meter");
-var i = 0;
-if (this.scrollY < 4000) {
-  const i = Math.floor(this.scrollY / 1000);
-  for (let x = 0; x < meter.length; x++) {
-    meter[x].style.backgroundColor = i === x ? "rgba(247, 164, 164, 1 )" : "rgba(247, 164, 164, 0.25 )";
+function ChangeBackground() {
+  var body = document.body;
+  var currentPosition = window.pageYOffset;
+  var maxHeight = screen.availHeight;
+  console.log(maxHeight);
+  if (currentPosition < maxHeight) {
+    body.style.backgroundImage = "url('Images/main1.jpg')";
+  } else if (currentPosition >= maxHeight && currentPosition <= maxHeight*2) {
+    body.style.backgroundImage = "url('Images/main2.jpg')";
+  } else {
+    body.style.backgroundImage = "url('Images/main3.jpg')";
   }
-} else {
-  const i = Math.floor(this.scrollY / 1000);
-  for (let x = 0; x < meter.length; x++) {
-    meter[x].style.backgroundColor = i === x ? "rgba(247, 164, 164, 1 )" : "rgba(247, 164, 164, 0.25 )";
-  }
-}
+
 };
 
-window.addEventListener("scroll", myFunction , false);
+window.addEventListener("scroll", ChangeBackground , false);
