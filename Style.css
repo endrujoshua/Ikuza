@@ -272,7 +272,7 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-  #collapse-container-nav-secondary {float: left; width: 100%; margin-left: 2.5%; display: block;}
+  #collapse-container-nav-secondary {float: left; width: 100%; margin-left: 2.5%;}
   #dropdown-content-nav-secondary {text-align: center;}
   #p1-dropdown-content-sosmed-nav {text-align: center;}
   #p2-dropdown-content-sosmed-nav {text-align: center;}
@@ -332,6 +332,7 @@ body{
   color:#E8D2A6;
 
   text-align: left;
+  margin-top: -20px;
 }
 
 

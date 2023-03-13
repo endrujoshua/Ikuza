@@ -15,15 +15,20 @@ function collapse_btn(){
     dropdown_content_btn2.style.display = "none";
     dropdown_content_btn3.style.display = "none";
   }
-  var title_textbox = document.getElementById("title-textbox");
-  var description_textbox = document.getElementById("description-textbox");
-  if (window.innerWidth < 600 && collapse_content.style.display === "none"){
-    console.debug("display");
+
+  /* Hide Textbox on toggle */
+  if (window.innerWidth < 600 && collapse_content.style.display === "block"){
+    var title_textbox = document.getElementById("title-textbox");
+    var description_textbox = document.getElementById("description-textbox");
+
     title_textbox.style.display = "none";
     description_textbox.style.display = "none";
-  }
+  } 
+  /* Unide Textbox on toggle */
+  if (window.innerWidth < 600 && collapse_content.style.display === "none"){
+    var title_textbox = document.getElementById("title-textbox");
+    var description_textbox = document.getElementById("description-textbox");
 
-  if (window.innerWidth < 600 && title_textbox.style.display == "none"){
     title_textbox.style.display = "block";
     description_textbox.style.display = "block";
   }
