@@ -300,8 +300,9 @@ body{
   font-size: 60px;
   color:#E96479;
   
-  text-align: center;
+  text-align: right;
   margin-top: 50vh;
+  margin-right: 10vh;
   position:static;
 }
 
@@ -315,7 +316,7 @@ body{
 
 /* Left Side Text Box */
 .left-side-textbox{
-  width: 30%;
+  width: 50%;
   height: 100vh;
   float: left;
 }
@@ -329,7 +330,7 @@ body{
 
   text-align: left;
   margin-top: 50vh;
-  margin-left: 1.5vh;
+  margin-left: 7.5vh;
   position:static;
 }
 
@@ -340,7 +341,8 @@ body{
   color:#FEBE8C;
 
   text-align: left;
-  margin-left: 1.5vh;
+  text-align: justify;
+  margin-left: 8vh;
   margin-top: -7.5vh;
 }
 
