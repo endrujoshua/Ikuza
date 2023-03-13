@@ -15,7 +15,6 @@ body{
 
 .li-nav-main{
   display: inline;
-  font-family: 'Montserrat', sans-serif;
 }
 
 /* Button no Dropdown */
@@ -23,6 +22,8 @@ body{
   background: none;
   border: none;
   cursor: pointer;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-nav-main:hover{
@@ -63,8 +64,8 @@ body{
 
 /* Dropdown Hyperlink */
 .a-dropdown-nav-main{
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  font-weight: bold;
   color: #FEBE8C;
   font-size: 12px;
 
@@ -118,16 +119,14 @@ body{
   list-style-type: none;
 }
 
-.li-nav-secondary{
-  font-family: 'Montserrat', sans-serif;
-}
-
 /* Button no Dropdown*/
 .btn-nav-secondary{
   background: none;
   border: none;
   cursor: pointer;
   margin-bottom: 10px;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-nav-secondary:hover{
@@ -158,8 +157,8 @@ body{
 
 /* Dropdown Content */
 .a-dropdown-nav-secondary{
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  font-weight:bold;
   color: #1A0000;
   font-size: 14px;
 
@@ -175,8 +174,8 @@ body{
 
 /* Hyperlink */
 .a-sosmed-dropdown-nav{
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  font-weight:bold;
   color: #1A0000;
   font-size: 16px;
 
@@ -195,6 +194,8 @@ body{
   cursor: pointer;
   margin: 5px 0;
   float: center;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .p1-btn-sosmed-nav:hover{
@@ -223,6 +224,8 @@ body{
   cursor: pointer;
   margin: 5px 0;
   float: center;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .p2-btn-sosmed-nav:hover{
@@ -251,6 +254,8 @@ body{
   cursor: pointer;
   margin: 5px 0;
   float: center;
+
+  font-family: 'Montserrat', sans-serif;
 }
 
 .p3-btn-sosmed-nav:hover{
@@ -317,22 +322,25 @@ body{
 /* Title */
 #title-textbox{
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   font-size: 60px;
   color:#F55050;
 
   text-align: left;
   margin-top: 50vh;
+  margin-left: 1.5vh;
   position:static;
 }
 
 /* Description */
 #description-textbox{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color:#E8D2A6;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#FEBE8C;
 
   text-align: left;
-  margin-top: -20px;
+  margin-left: 1.5vh;
+  margin-top: -7.5vh;
 }
 
 

@@ -16,7 +16,7 @@ function collapse_btn(){
     dropdown_content_btn3.style.display = "none";
   }
 
-  /* Hide Textbox on toggle */
+  /* Hide Textbox on toggle P1 */
   if (window.innerWidth < 600 && collapse_content.style.display === "block"){
     var title_textbox = document.getElementById("title-textbox");
     var description_textbox = document.getElementById("description-textbox");
