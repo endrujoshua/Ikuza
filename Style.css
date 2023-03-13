@@ -321,8 +321,8 @@ body{
   float: left;
 }
 
-/* Title */
-#title-textbox{
+/* Title P1 */
+#title-textbox-p1{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
@@ -334,8 +334,8 @@ body{
   position:static;
 }
 
-/* Description */
-#description-textbox{
+/* Description P1 */
+#description-textbox-p1{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color:#FEBE8C;
@@ -346,6 +346,80 @@ body{
   margin-top: -7.5vh;
 }
 
+/* Title P2 */
+#title-textbox-p2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color:#F55050;
+
+  text-align: left;
+  margin-top: 50vh;
+  margin-left: 7.5vh;
+  position:static;
+}
+
+/* Description P2 */
+#description-textbox-p2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#FEBE8C;
+
+  text-align: left;
+  text-align: justify;
+  margin-left: 8vh;
+  margin-top: -7.5vh;
+}
+
+/* Title P3 */
+#title-textbox-p3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color:#F55050;
+
+  text-align: left;
+  margin-top: 50vh;
+  margin-left: 7.5vh;
+  position:static;
+}
+
+/* Description P3 */
+#description-textbox-p3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#FEBE8C;
+
+  text-align: left;
+  text-align: justify;
+  margin-left: 8vh;
+  margin-top: -7.5vh;
+}
+
+/* Title P4 */
+#title-textbox-p4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color:#F55050;
+
+  text-align: left;
+  margin-top: 50vh;
+  margin-left: 7.5vh;
+  position:static;
+}
+
+/* Description P4 */
+#description-textbox-p4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#FEBE8C;
+
+  text-align: left;
+  text-align: justify;
+  margin-left: 8vh;
+  margin-top: -7.5vh;
+}
 
 /*Background image */
 body {

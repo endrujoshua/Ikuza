@@ -18,19 +18,43 @@ function collapse_btn(){
 
   /* Hide Textbox on toggle P1 */
   if (window.innerWidth < 600 && collapse_content.style.display === "block"){
-    var title_textbox = document.getElementById("title-textbox");
-    var description_textbox = document.getElementById("description-textbox");
+    var title_textbox_p1 = document.getElementById("title-textbox-p1");
+    var title_textbox_p2 = document.getElementById("title-textbox-p2");
+    var title_textbox_p3 = document.getElementById("title-textbox-p3");
+    var title_textbox_p4 = document.getElementById("title-textbox-p4");
+    var description_textbox_p1 = document.getElementById("description-textbox-p1");
+    var description_textbox_p2 = document.getElementById("description-textbox-p2");
+    var description_textbox_p3 = document.getElementById("description-textbox-p3");
+    var description_textbox_p4 = document.getElementById("description-textbox-p4");
 
-    title_textbox.style.display = "none";
-    description_textbox.style.display = "none";
+    title_textbox_p1.style.display = "none";
+    title_textbox_p2.style.display = "none";
+    title_textbox_p3.style.display = "none";
+    title_textbox_p4.style.display = "none";
+    description_textbox_p1.style.display = "none";
+    description_textbox_p2.style.display = "none";
+    description_textbox_p3.style.display = "none";
+    description_textbox_p4.style.display = "none";
   } 
   /* Unhide Textbox on toggle */
   if (window.innerWidth < 600 && collapse_content.style.display === "none"){
-    var title_textbox = document.getElementById("title-textbox");
-    var description_textbox = document.getElementById("description-textbox");
+    var title_textbox_p1 = document.getElementById("title-textbox-p1");
+    var title_textbox_p2 = document.getElementById("title-textbox-p2");
+    var title_textbox_p3 = document.getElementById("title-textbox-p3");
+    var title_textbox_p4 = document.getElementById("title-textbox-p4");
+    var description_textbox_p1 = document.getElementById("description-textbox-p1");
+    var description_textbox_p2 = document.getElementById("description-textbox-p2");
+    var description_textbox_p3 = document.getElementById("description-textbox-p3");
+    var description_textbox_p4 = document.getElementById("description-textbox-p4");
 
-    title_textbox.style.display = "block";
-    description_textbox.style.display = "block";
+    title_textbox_p1.style.display = "block";
+    title_textbox_p2.style.display = "block";
+    title_textbox_p3.style.display = "block";
+    title_textbox_p4.style.display = "block";
+    description_textbox_p1.style.display = "block";
+    description_textbox_p2.style.display = "block";
+    description_textbox_p3.style.display = "block";
+    description_textbox_p4.style.display = "block";
   }
 
 }
