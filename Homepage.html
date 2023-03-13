@@ -43,10 +43,10 @@
                 <div class="dropdown-nav-main">
                     <button class="btn-nav-main a-nav-main">LOCATION</button>
                     <div class="dropdown-content-nav-main">
-                        <a class="a-dropdown-nav-main" href="#4a">AOMORI</a>
-                        <a class="a-dropdown-nav-main" href="#4b">IKEBUKURO</a>
-                        <a class="a-dropdown-nav-main" href="#4c">NAGASAKI</a>
-                        <a class="a-dropdown-nav-main" href="#4d">SHIBUYA</a>
+                        <a class="a-dropdown-nav-main" href="#4A">AOMORI</a>
+                        <a class="a-dropdown-nav-main" href="#4B">IKEBUKURO</a>
+                        <a class="a-dropdown-nav-main" href="#4C">NAGASAKI</a>
+                        <a class="a-dropdown-nav-main" href="#4D">SHIBUYA</a>
                     </div>
                 </div>
             </li>
@@ -59,8 +59,8 @@
                         </svg>
                     </button>
                     <div class="dropdown-content-nav-main">
-                        <a class="a-dropdown-nav-main" href="#5a">IKUZA</a>
-                        <a class="a-dropdown-nav-main" href="#5b">UCHIKA</a>
+                        <a class="a-dropdown-nav-main" href="#5A">IKUZA</a>
+                        <a class="a-dropdown-nav-main" href="#5B">UCHIKA</a>
                     </div>
                 </div>
             </li>
@@ -72,8 +72,8 @@
                         </svg>
                     </button>
                     <div class="dropdown-content-nav-main">
-                        <a class="a-dropdown-nav-main" href="#6a">IKUZA</a>
-                        <a class="a-dropdown-nav-main" href="#6b">UCHIKA</a>
+                        <a class="a-dropdown-nav-main" href="#6A">IKUZA</a>
+                        <a class="a-dropdown-nav-main" href="#6B">UCHIKA</a>
                     </div>
                 </div>
             </li>
@@ -85,7 +85,7 @@
                         </svg>
                     </button>
                     <div class="dropdown-content-nav-main">
-                        <a class="a-dropdown-nav-main" href="#7a">IKUZA</a>
+                        <a class="a-dropdown-nav-main" href="#7A">IKUZA</a>
                     </div>
                 </div>
             </li>
@@ -93,11 +93,11 @@
     </div>
     <!-- Nav Bar for Mobile and Tablet -->
     <div class="navbar-secondary">
-        <button class="collapse-btn-nav-secondary">
+        <button class="collapse-btn-nav-secondary" onclick="collapse_btn()">
             <?xml version="1.0" encoding="UTF-8"?><svg width="32px" height="32px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
                 <path d="M21 7.353v9.294a.6.6 0 01-.309.525l-8.4 4.666a.6.6 0 01-.582 0l-8.4-4.666A.6.6 0 013 16.647V7.353a.6.6 0 01.309-.524l8.4-4.667a.6.6 0 01.582 0l8.4 4.667a.6.6 0 01.309.524z" stroke="#f7a4a4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.528 7.294l8.18 4.544a.6.6 0 00.583 0l8.209-4.56M12 21v-9" stroke="#f7a4a4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.691 11.829l-7.8-4.334A.6.6 0 003 8.02v8.627a.6.6 0 00.309.525l7.8 4.333A.6.6 0 0012 20.98v-8.627a.6.6 0 00-.309-.524z" fill="#f7a4a4" stroke="#f7a4a4" stroke-width="1.5" stroke-linejoin="round"></path></svg>
         </button>
-        <div class="collapse-container-nav-secondary">
+        <div id="collapse-container-nav-secondary">
             <ul class="ul-nav-secondary">
                 <li class="li-nav-secondary">
                     <button class="btn-nav-secondary">
@@ -116,49 +116,49 @@
                 </li>
                 <li class="li-nav-secondary">
                     <div class="dropdown-nav-secondary">
-                        <button class="btn-nav-secondary a-nav-secondary">LOCATION</button>
-                        <div class="dropdown-content-nav-secondary">
-                            <a class="a-dropdown-nav-secondary" href="#4a">AOMORI</a>
-                            <a class="a-dropdown-nav-secondary" href="#4b">IKEBUKURO</a>
-                            <a class="a-dropdown-nav-secondary" href="#4c">NAGASAKI</a>
-                            <a class="a-dropdown-nav-secondary" href="#4d">SHIBUYA</a>
+                        <button class="btn-nav-secondary a-nav-secondary" onclick="dropdown_btn()">LOCATION</button>
+                        <div id="dropdown-content-nav-secondary">
+                            <a class="a-dropdown-nav-secondary" href="#4A">AOMORI</a>
+                            <a class="a-dropdown-nav-secondary" href="#4B">IKEBUKURO</a>
+                            <a class="a-dropdown-nav-secondary" href="#4C">NAGASAKI</a>
+                            <a class="a-dropdown-nav-secondary" href="#4D">SHIBUYA</a>
                         </div>
                     </div>
                 </li>
                 <!-- Social Media Icon Secondary -->
                 <li class="li-nav-secondary">
                     <div class="p1-dropdown-sosmed-nav">
-                        <button class="p1-btn-sosmed-nav">
-                            <?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
+                        <button class="p1-btn-sosmed-nav" onclick="sosmed1_btn()">
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
                                 <path d="M23 3.01s-2.018 1.192-3.14 1.53a4.48 4.48 0 00-7.86 3v1a10.66 10.66 0 01-9-4.53s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.278-.028-.556-.08-.83C21.94 5.674 23 3.01 23 3.01z" stroke="#f7a4a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </button>
-                        <div class="p1-dropdown-content-sosmed-nav">
-                            <a class="a-sosmed-dropdown-nav" href="#5a">IKUZA</a>
-                            <a class="a-sosmed-dropdown-nav" href="#5b">UCHIKA</a>
+                        <div id="p1-dropdown-content-sosmed-nav">
+                            <a class="a-sosmed-dropdown-nav" href="#5A">IKUZA</a>
+                            <a class="a-sosmed-dropdown-nav" href="#5B">UCHIKA</a>
                         </div>
                     </div>
                     <div class="p2-dropdown-sosmed-nav">
-                        <button class="p2-btn-sosmed-nav">
-                            <?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" stroke-width="2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
+                        <button class="p2-btn-sosmed-nav" onclick="sosmed2_btn()">
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" stroke-width="1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
                                 <path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke="#f7a4a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke="#f7a4a4" stroke-width="3"></path><path d="M17.5 6.51l.01-.011" stroke="#f7a4a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </button>
-                        <div class="p2-dropdown-content-sosmed-nav">
-                            <a class="a-sosmed-dropdown-nav" href="#6a">IKUZA</a>
-                            <a class="a-sosmed-dropdown-nav" href="#6b">UCHIKA</a>
+                        <div id="p2-dropdown-content-sosmed-nav">
+                            <a class="a-sosmed-dropdown-nav" href="#6A">IKUZA</a>
+                            <a class="a-sosmed-dropdown-nav" href="#6B">UCHIKA</a>
                         </div>
                     </div>
                     <div class="p3-dropdown-sosmed-nav">
-                        <button class="p3-btn-sosmed-nav">
-                            <?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" viewBox="0 0 24 24" stroke-width="2" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
+                        <button class="p3-btn-sosmed-nav" onclick="sosmed3_btn()">
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="20px" height="20px" viewBox="0 0 24 24" stroke-width="1" fill="none" xmlns="http://www.w3.org/2000/svg" color="#f7a4a4">
                                 <path d="M5.5 16c5 2.5 8 2.5 13 0M15.5 17.5l1 2s4.171-1.328 5.5-3.5c0-1 .53-8.147-3-10.5-1.5-1-4-1.5-4-1.5l-1 2h-2" stroke="#f7a4a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <path d="M8.528 17.5l-1 2s-4.171-1.328-5.5-3.5c0-1-.53-8.147 3-10.5 1.5-1 4-1.5 4-1.5l1 2h2" stroke="#f7a4a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 14c-.828 0-1.5-.895-1.5-2s.672-2 1.5-2 1.5.895 1.5 2-.672 2-1.5 2zM15.5 14c-.828 0-1.5-.895-1.5-2s.672-2 1.5-2 1.5.895 1.5 2-.672 2-1.5 2z" stroke="#f7a4a4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </button>
-                        <div class="p3-dropdown-content-sosmed-nav">
-                            <a class="a-sosmed-dropdown-nav" href="#7a">IKUZA</a>
+                        <div id="p3-dropdown-content-sosmed-nav">
+                            <a class="a-sosmed-dropdown-nav" href="#7A">IKUZA</a>
                         </div>
                     </div>
                 </li>
@@ -168,8 +168,8 @@
     <!-- Nav Bar End -->
 
     <!-- PAGE 1 -->
-    <!--Right Side Container P1-->
     <section class="container">
+        <!--Right Side Container-->
         <div class="right-side-bar">
             <h1 class="right-side-bar-title">FROM</h1>
         </div>
@@ -183,32 +183,35 @@
                 <div class="meter" id="sec4"></div>
             </div>
         </div>
-    
-        <!-- Left Side Content -->
-        <div>
 
+        <!-- Left Side Text Box -->
+        <div class="left-side-textbox">
+            <h1 class="title-textbox">IKUZA</h1>
+                <p class="title-dropdown">
+                    is one of the most famous furniture manufacturer in Japan since 1945.
+                </p>
         </div>
     </section>
 
     <!-- PAGE 2 -->
-    <!-- Right Side Container P2 -->
     <section class="container">
+        <!-- Right Side Container P2 -->
         <div class="right-side-bar">
             <h1 class="right-side-bar-title">TIME</h1>
         </div>
     </section>
 
     <!-- PAGE 3 -->
-    <!-- Right Side Container P3 -->
     <section class="container">
+        <!-- Right Side Container P3 -->
         <div class="right-side-bar">
             <h1 class="right-side-bar-title">TO</h1>
         </div>
     </section>
     
     <!-- PAGE 4 -->
-    <!-- Right Side Container P4 -->
     <section class="container">
+        <!-- Right Side Container P4 -->
         <div class="right-side-bar">
             <h1 class="right-side-bar-title">TIME</h1>
         </div>

@@ -105,25 +105,18 @@
 }
 
 /* Collapse Container */
-.collapse-container-nav-secondary{
+#collapse-container-nav-secondary{
   display: none;
-  position: relative;0
+  position: relative;
   float: right;
 }
 
-/* Collapse Hover */
-.navbar-secondary:hover .collapse-container-nav-secondary {
-  display: block;
-}
-
-/* Inside container */
 .ul-nav-secondary{
   list-style-type: none;
 }
 
 .li-nav-secondary{
   font-family: 'Montserrat', sans-serif;
-  padding: 0 0 10px 0;
 }
 
 /* Button no Dropdown*/
@@ -131,6 +124,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .btn-nav-secondary:hover{
@@ -146,7 +140,7 @@
 }
 
 /* Dropdown */
-.dropdown-content-nav-secondary{
+#dropdown-content-nav-secondary{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -166,17 +160,12 @@
   color: #1A0000;
   font-size: 14px;
 
-  padding: 5px 0 5px 5px ;
+  padding: 5px 0 5px 5px;
   display: block;
 }
 
 .a-dropdown-nav-secondary:hover{
   background-color:rgba(247, 164, 164, 0.75);
-}
-
-/* Dropdown Hover */
-.dropdown-nav-secondary:hover .dropdown-content-nav-secondary{
-  display: block;
 }
 
 /* Social Media Icon */
@@ -188,8 +177,8 @@
   color: #1A0000;
   font-size: 16px;
 
-  padding: 5px 0 5px 5px ;
   display: block;
+  padding: 5px 0 5px 5px;
 }
 
 .a-sosmed-dropdown-nav:hover{
@@ -201,7 +190,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 0 5px 0;
+  margin: 5px 0;
   float: center;
 }
 
@@ -210,7 +199,7 @@
 }
 
 /* Dropdown */
-.p1-dropdown-content-sosmed-nav{
+#p1-dropdown-content-sosmed-nav{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -221,11 +210,6 @@
   border-color:white;
   
   text-align:left;
-}
-
-/* Hover */
-.p1-dropdown-sosmed-nav:hover .p1-dropdown-content-sosmed-nav{
-  display: block;
 }
 
 /* 2 */
@@ -234,7 +218,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 0 5px 0;
+  margin: 5px 0;
   float: center;
 }
 
@@ -243,7 +227,7 @@
 }
 
 /* Dropdown */
-.p2-dropdown-content-sosmed-nav{
+#p2-dropdown-content-sosmed-nav{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -254,11 +238,6 @@
   border-color:white;
   
   text-align:left;
-}
-
-/* Hover */
-.p2-dropdown-sosmed-nav:hover .p2-dropdown-content-sosmed-nav{
-  display: block;
 }
 
 /* 3 */
@@ -267,7 +246,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 0 5px 0;
+  margin: 5px 0;
   float: center;
 }
 
@@ -276,7 +255,7 @@
 }
 
 /* Dropdown */
-.p3-dropdown-content-sosmed-nav{
+#p3-dropdown-content-sosmed-nav{
   display: none;
   position: static;
   background-color:rgba(255, 255, 255, 0.4);
@@ -289,38 +268,69 @@
   text-align:left;
 }
 
-/* Hover */
-.p3-dropdown-sosmed-nav:hover .p3-dropdown-content-sosmed-nav{
-  display: block;
-}
+@media only screen and (max-width: 600px) {
+  #collapse-container-nav-secondary {float: left; width: 100%; margin-left: 2.5%;}
+  #dropdown-content-nav-secondary {text-align: center;}
+  #p1-dropdown-content-sosmed-nav {text-align: center;}
+  #p2-dropdown-content-sosmed-nav {text-align: center;}
+  #p3-dropdown-content-sosmed-nav {text-align: center;}
+} 
 
 /* Nav Bar End */
 
-/*Layout of the website */
+/* Layout of The Website */
+/* Right Side Container */
 .right-side-bar{
   width: 18.5%;
   height: 100vh;
   float: right;
 }
 
-.side-bar2{
-  width: 81.5%;
-  height: 100vh;
-  float: left;
-}
-
-/* Right sidebar*/
-
 .right-side-bar-title{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
-  color:#F55050;
+  color:#E96479;
   
   text-align: center;
-  margin-top: 40vh;
+  margin-top: 50vh;
   position:static;
 }
+
+/* Left Side Scroll Bar */
+.side-bar2{
+  width: 7.5%;
+  height: 100vh;
+  float: left;
+}
+
+/* Left Side Text Box */
+.left-side-textbox{
+  width: 30%;
+  height: 100vh;
+  float: left;
+}
+
+/* Title */
+.title-textbox{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  color:#F55050;
+
+  text-align: left;
+  margin-top: 50vh;
+  position:static;
+}
+
+/* Description */
+.title-dropdown{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color:#E8D2A6;
+
+  text-align: left;
+}
+
 
 /*Background image */
 body {
@@ -338,7 +348,6 @@ background-position: top 0px center;
   height: 100vh;
   width: 100%;
 }
-
 
 
 /*Animation */
