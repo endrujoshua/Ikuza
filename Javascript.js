@@ -134,5 +134,17 @@ function ChangeBackground() {
   }
 
 };
+function setBodyHeight() {
+  // Get the window height
+  var windowHeight = window.innerHeight;
 
+  // Set the body height to 400% of the window height
+  document.body.style.height = (windowHeight * 4) + 'px';
+}
+
+// Call the function when the window is resized
+window.addEventListener('resize', setBodyHeight);
+
+// Call the function on page load
+setBodyHeight();
 window.addEventListener("scroll", ChangeBackground , false);
