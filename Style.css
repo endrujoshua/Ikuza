@@ -337,7 +337,7 @@ body{
 #description-textbox-p1{
   text-align: left;
   text-align: justify;
-  margin-top: -5vh;
+  margin-top: -4vh;
   margin-left: 10vh;
 }
 
@@ -349,7 +349,6 @@ body{
 
   min-width: 215px;
   padding: 0;
-  margin-top: 10px;
 }
 
 /* Left Side Text Box P2 */
@@ -371,7 +370,7 @@ body{
   text-align: left;
   text-align: justify;
   margin-left: 10vh;
-  margin-top: -5vh;
+  margin-top: -4vh;
 }
 
 .text-p2{
@@ -404,7 +403,7 @@ body{
   text-align: left;
   text-align: justify;
   margin-left: 10vh;
-  margin-top: -5vh;
+  margin-top: -4vh;
 }
 
 .text-p3{
@@ -415,7 +414,6 @@ body{
 
   min-width: 240px;
   padding: 0;
-  margin-top: 10px;
 }
 
 /* Left Side Text Box P4 */
@@ -437,7 +435,7 @@ body{
   text-align: left;
   text-align: justify;
   margin-left: 10vh;
-  margin-top: -5vh;
+  margin-top: -4vh;
 }
 
 .text1-p4{
@@ -448,7 +446,6 @@ body{
 
   min-width: 260px;
   padding: 0;
-  margin-top: 10px;
 }
 
 .text2-p4{
@@ -459,7 +456,6 @@ body{
 
   min-width: 280px;
   padding: 0;
-  margin-top: 10px;
 }
 
 /*Background image */
