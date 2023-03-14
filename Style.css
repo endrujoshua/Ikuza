@@ -313,7 +313,7 @@ body{
   position: fixed;
 }
 
-/* Left Side Text Box */
+/* Left Side Text Box P1 */
 .left-side-textbox{
   width: 34%;
   height: 100vh;
@@ -352,6 +352,7 @@ body{
   margin: 0;
 }
 
+/* Left Side Text Box P2 */
 /* Title P2 */
 #title-textbox-p2{
   font-family: 'Montserrat', sans-serif;
@@ -367,26 +368,24 @@ body{
 
 /* Description P2 */
 #description-textbox-p2{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color:#FEBE8C;
-
   text-align: left;
   text-align: justify;
   margin-left: 10vh;
   margin-top: -5vh;
 }
 
-.text1-p2{
+.text-p2{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  color:#FEBE8C;
+  color:#1A0000;
+  background-color:rgba(255, 255, 255, 0.15);
 
-  min-width: 215px;
+  min-width: 240px;
   padding: 0;
   margin: 0;
 }
 
+/* Left Side Text Box P3 */
 /* Title P3 */
 #title-textbox-p3{
   font-family: 'Montserrat', sans-serif;
@@ -402,27 +401,24 @@ body{
 
 /* Description P3 */
 #description-textbox-p3{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color:#FEBE8C;
-
   text-align: left;
   text-align: justify;
   margin-left: 10vh;
   margin-top: -5vh;
 }
 
-.text1-p3{
+.text-p3{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color:#F7A4A4;
   background-color:rgba(255, 255, 255, 0.15);
 
-  min-width: 215px;
+  min-width: 240px;
   padding: 0;
   margin: 0;
 }
 
+/* Left Side Text Box P4 */
 /* Title P4 */
 #title-textbox-p4{
   font-family: 'Montserrat', sans-serif;
@@ -438,14 +434,32 @@ body{
 
 /* Description P4 */
 #description-textbox-p4{
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  color:#FEBE8C;
-
   text-align: left;
   text-align: justify;
   margin-left: 10vh;
   margin-top: -5vh;
+}
+
+.text1-p4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#1A0000;
+  background-color:rgba(255, 255, 255, 0.15);
+
+  min-width: 260px;
+  padding: 0;
+  margin: 0;
+}
+
+.text2-p4{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#1A0000;
+  background-color:rgba(255, 255, 255, 0.15);
+
+  min-width: 280px;
+  padding: 0;
+  margin-top: 10px;
 }
 
 /*Background image */
