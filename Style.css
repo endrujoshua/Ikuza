@@ -299,11 +299,10 @@ body{
   font-weight: bold;
   font-size: 60px;
   color:#E96479;
-  
-  text-align: right;
+
   margin-top: 50vh;
-  margin-right: 10vh;
   position:static;
+  text-align: center;
 }
 
 /* Left Side Scroll Bar */
@@ -316,7 +315,7 @@ body{
 
 /* Left Side Text Box */
 .left-side-textbox{
-  width: 50%;
+  width: 34%;
   height: 100vh;
   float: left;
 }
@@ -325,37 +324,43 @@ body{
 #title-textbox-p1{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   color:#F55050;
 
   text-align: left;
   margin-top: 50vh;
-  margin-left: 7.5vh;
+  margin-left: 10vh;
   position:static;
 }
 
 /* Description P1 */
 #description-textbox-p1{
+  text-align: left;
+  text-align: justify;
+  margin-top: -5vh;
+  margin-left: 10vh;
+}
+
+.text-p1{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color:#FEBE8C;
 
-  text-align: left;
-  text-align: justify;
-  margin-left: 8vh;
-  margin-top: -7.5vh;
+  min-width: 215px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Title P2 */
 #title-textbox-p2{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   color:#F55050;
 
   text-align: left;
   margin-top: 50vh;
-  margin-left: 7.5vh;
+  margin-left: 10vh;
   position:static;
 }
 
@@ -367,20 +372,30 @@ body{
 
   text-align: left;
   text-align: justify;
-  margin-left: 8vh;
-  margin-top: -7.5vh;
+  margin-left: 10vh;
+  margin-top: -5vh;
+}
+
+.text1-p2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#FEBE8C;
+
+  min-width: 215px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Title P3 */
 #title-textbox-p3{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   color:#F55050;
 
   text-align: left;
   margin-top: 50vh;
-  margin-left: 7.5vh;
+  margin-left: 10vh;
   position:static;
 }
 
@@ -392,20 +407,30 @@ body{
 
   text-align: left;
   text-align: justify;
-  margin-left: 8vh;
-  margin-top: -7.5vh;
+  margin-left: 10vh;
+  margin-top: -5vh;
+}
+
+.text1-p3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color:#FEBE8C;
+
+  min-width: 215px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Title P4 */
 #title-textbox-p4{
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   color:#F55050;
 
   text-align: left;
   margin-top: 50vh;
-  margin-left: 7.5vh;
+  margin-left: 10vh;
   position:static;
 }
 
@@ -417,8 +442,8 @@ body{
 
   text-align: left;
   text-align: justify;
-  margin-left: 8vh;
-  margin-top: -7.5vh;
+  margin-left: 10vh;
+  margin-top: -5vh;
 }
 
 /*Background image */
