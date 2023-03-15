@@ -159,7 +159,7 @@ body{
 .a-dropdown-nav-secondary{
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: #1A0000;
+  color: black;
   font-size: 14px;
 
   padding: 5px 0 5px 5px;
@@ -546,8 +546,8 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* End of Homepage.html */
-.no-border-color{
-  border-color: none;
+.no-background-color{
+  background-color: none;
 }
 
 .font-color-black{
@@ -558,15 +558,20 @@ background-color: rgba(0, 0, 0, 0.5);
   border-color: black;
 }
 
-.font-color-white{
-  color: white;
-}
-
-.border-color-white{
-  border-color: white;
-}
-
 /* Gallery.html */ 
 .navbar-main{
   background: white;
+}
+
+#dropdown-content-nav-secondary-gallery{
+  display: none;
+  position: static;
+  background-color:none;
+  
+  min-width: 80px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  
+  text-align:left;
 }
