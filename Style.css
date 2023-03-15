@@ -546,10 +546,27 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* End of Homepage.html */
+.no-border-color{
+  border-color: none;
+}
 
+.font-color-black{
+  color: black;
+}
+
+.border-color-black{
+  border-color: black;
+}
+
+.font-color-white{
+  color: white;
+}
+
+.border-color-white{
+  border-color: white;
+}
 
 /* Gallery.html */ 
 .navbar-main{
   background: white;
 }
-
