@@ -194,3 +194,14 @@ function collapse_btn_gallery(){
     dropdown_content_btn3.style.display = "none";
   }
 }
+
+/* Dropdown Button */
+
+
+/* Sosmend Button 1 */
+
+
+/* Sosmend Button 2 */
+
+
+/* Sosmend Button 3 */
