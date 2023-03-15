@@ -176,7 +176,7 @@ body{
 .a-sosmed-dropdown-nav{
   font-family: 'Raleway', sans-serif;
   text-decoration: none;
-  color: #1A0000;
+  color: black;
   font-size: 16px;
 
   display: block;
@@ -546,9 +546,6 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* End of Homepage.html */
-.no-background-color{
-  background-color: none;
-}
 
 .font-color-black{
   color: black;
