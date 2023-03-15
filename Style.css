@@ -1,7 +1,8 @@
-/* Homepage.html */
 body{
   height: 100vh;
 }
+
+/* Homepage.html */
 /* Full Nav Bar for PC*/
 .navbar-main{
   width: 100%;
@@ -22,8 +23,6 @@ body{
   background: none;
   border: none;
   cursor: pointer;
-
-  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-nav-main:hover{
@@ -32,6 +31,7 @@ body{
 
 /* Hyperlink */
 .a-nav-main{
+  font-family: 'Montserrat', sans-serif;
   text-decoration:none;
   font-weight: bold;
   font-size: 16px;
@@ -475,7 +475,6 @@ background-position: top 0px center;
   width: 100vw;
 }
 
-
 /*Animation */
 
 .slide-right {
@@ -546,10 +545,11 @@ background-color: rgba(0, 0, 0, 0.5);
   z-index:99;
 }
 
-/* Homepage.html */
+/* End of Homepage.html */
 
 
 /* Gallery.html */ 
-.nav-container{
-  width: 100vh;
+.navbar-main{
+  background: white;
 }
+
