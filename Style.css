@@ -556,10 +556,6 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Gallery.html */ 
-.navbar-main{
-  background: white;
-}
-
 #dropdown-content-nav-secondary-gallery{
   display: none;
   position: static;
