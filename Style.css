@@ -572,3 +572,6 @@ background-color: rgba(0, 0, 0, 0.5);
   
   text-align:left;
 }
+#gallery_background{
+  background-color: white;
+}
