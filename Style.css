@@ -167,7 +167,7 @@ body{
 }
 
 .a-dropdown-nav-secondary:hover{
-  background-color:rgba(247, 164, 164, 0.75);
+  background-color:rgba(247, 164, 164, 0.25);
 }
 
 /* Social Media Icon */
@@ -184,7 +184,7 @@ body{
 }
 
 .a-sosmed-dropdown-nav:hover{
-  background-color:rgba(247, 164, 164, 0.75);
+  background-color:rgba(247, 164, 164, 0.25);
 }
 /* 1 */
 /* Button */
@@ -547,6 +547,8 @@ background-color: rgba(0, 0, 0, 0.5);
 
 /* End of Homepage.html */
 
+
+/* Gallery.html */ 
 .font-color-black{
   color: black;
 }
@@ -555,7 +557,7 @@ background-color: rgba(0, 0, 0, 0.5);
   border-color: black;
 }
 
-/* Gallery.html */ 
+/* Dropdown Content */
 #dropdown-content-nav-secondary-gallery{
   display: none;
   position: static;
@@ -568,6 +570,48 @@ background-color: rgba(0, 0, 0, 0.5);
   
   text-align:left;
 }
+
+/* Sosmed Button 1 */
+#p1-dropdown-content-sosmed-nav-gallery{
+  display: none;
+  position: static;
+  
+  min-width: 80px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  
+  text-align:left;
+}
+
+/* Sosmed Button 2 */
+#p2-dropdown-content-sosmed-nav-gallery{
+  display: none;
+  position: static;
+  
+  min-width: 80px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  
+  text-align:left;
+}
+
+/* Sosmed Button 3 */
+#p3-dropdown-content-sosmed-nav-gallery{
+  display: none;
+  position: static;
+  
+  min-width: 80px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  
+  text-align:left;
+}
+
+
+/* Background */
 #gallery_background{
   background-color: white;
   background-image: none;

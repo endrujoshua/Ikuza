@@ -16,7 +16,7 @@ function collapse_btn(){
     dropdown_content_btn3.style.display = "none";
   }
 
-  /* Hide Textbox on toggle P1 */
+  /* Hide Textbox on toggle */
   if (window.innerWidth < 600 && collapse_content.style.display === "block"){
     var title_textbox_p1 = document.getElementById("title-textbox-p1");
     var title_textbox_p2 = document.getElementById("title-textbox-p2");
@@ -57,6 +57,47 @@ function collapse_btn(){
     description_textbox_p4.style.display = "block";
   }
 
+  /* Display textbox on tablet and PC */
+  if (window.innerWidth > 600 && collapse_content.style.display === "none"){
+    var title_textbox_p1 = document.getElementById("title-textbox-p1");
+    var title_textbox_p2 = document.getElementById("title-textbox-p2");
+    var title_textbox_p3 = document.getElementById("title-textbox-p3");
+    var title_textbox_p4 = document.getElementById("title-textbox-p4");
+    var description_textbox_p1 = document.getElementById("description-textbox-p1");
+    var description_textbox_p2 = document.getElementById("description-textbox-p2");
+    var description_textbox_p3 = document.getElementById("description-textbox-p3");
+    var description_textbox_p4 = document.getElementById("description-textbox-p4");
+
+    title_textbox_p1.style.display = "block";
+    title_textbox_p2.style.display = "block";
+    title_textbox_p3.style.display = "block";
+    title_textbox_p4.style.display = "block";
+    description_textbox_p1.style.display = "block";
+    description_textbox_p2.style.display = "block";
+    description_textbox_p3.style.display = "block";
+    description_textbox_p4.style.display = "block";
+  } 
+
+  /* Display textbox on tablet and PC */
+  if (window.innerWidth > 600 && collapse_content.style.display === "block"){
+    var title_textbox_p1 = document.getElementById("title-textbox-p1");
+    var title_textbox_p2 = document.getElementById("title-textbox-p2");
+    var title_textbox_p3 = document.getElementById("title-textbox-p3");
+    var title_textbox_p4 = document.getElementById("title-textbox-p4");
+    var description_textbox_p1 = document.getElementById("description-textbox-p1");
+    var description_textbox_p2 = document.getElementById("description-textbox-p2");
+    var description_textbox_p3 = document.getElementById("description-textbox-p3");
+    var description_textbox_p4 = document.getElementById("description-textbox-p4");
+
+    title_textbox_p1.style.display = "block";
+    title_textbox_p2.style.display = "block";
+    title_textbox_p3.style.display = "block";
+    title_textbox_p4.style.display = "block";
+    description_textbox_p1.style.display = "block";
+    description_textbox_p2.style.display = "block";
+    description_textbox_p3.style.display = "block";
+    description_textbox_p4.style.display = "block";
+  } 
 }
 
 /* Dropdown Button */
@@ -77,7 +118,6 @@ function dropdown_btn(){
 
 /* Sosmed Button 1 */
 function sosmed1_btn(){
-  var collapse_content = document.getElementById("collapse-container-nav-secondary");
   var dropdown_content = document.getElementById("dropdown-content-nav-secondary");
   var dropdown_content_btn1 = document.getElementById("p1-dropdown-content-sosmed-nav");
   var dropdown_content_btn2 = document.getElementById("p2-dropdown-content-sosmed-nav");
@@ -94,7 +134,6 @@ function sosmed1_btn(){
 
 /* Sosmed Button 2 */
 function sosmed2_btn(){
-  var collapse_content = document.getElementById("collapse-container-nav-secondary");
   var dropdown_content = document.getElementById("dropdown-content-nav-secondary");
   var dropdown_content_btn1 = document.getElementById("p1-dropdown-content-sosmed-nav");
   var dropdown_content_btn2 = document.getElementById("p2-dropdown-content-sosmed-nav");
@@ -111,7 +150,6 @@ function sosmed2_btn(){
 
 /* Sosmed Button 3 */
 function sosmed3_btn(){
-  var collapse_content = document.getElementById("collapse-container-nav-secondary");
   var dropdown_content = document.getElementById("dropdown-content-nav-secondary");
   var dropdown_content_btn1 = document.getElementById("p1-dropdown-content-sosmed-nav");
   var dropdown_content_btn2 = document.getElementById("p2-dropdown-content-sosmed-nav");
@@ -125,5 +163,6 @@ function sosmed3_btn(){
     dropdown_content_btn3.style.display = "none";
   }
 }
+
 /* Navbar End */
 
