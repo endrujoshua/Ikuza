@@ -1,0 +1,5 @@
+Bed_1.jpg, Bed, #FFFFFF, #C7C6C1, #8807B
+Bed_2.jpg, Bed, #FFFFFF, #363636
+Bed_3.jpg, Bed, #FFFFFF, #999DA0
+Bed_4.jpg, Bed, #FFFFFF
+Bed_5.jpg, Bed, #FFFFFF, #614B00

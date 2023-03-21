@@ -1,0 +1,5 @@
+Bed_1.jpg, Bed, Chairo to shiro, "Brown meet white, It's firm yet soft.", ¥35000
+Bed_2.jpg, Bed, Mijikakute shiroi, "It's small and adjustable according to your height.", ¥45000
+Bed_3.jpg, Bed, Nagakute shiroi, "It's separable and fit the whole family.", ¥55000
+Bed_4.jpg, Bed, Masshiro, "It's white, it's simple and it's flexible.", ¥40000 
+Bed_5.jpg, Bed, Roiyaru to howaito, "It's the best when it comes to comfort. it has built in heating and massage feature.", ¥70000
