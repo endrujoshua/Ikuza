@@ -1,5 +1,23 @@
-Bed_1.jpg, Bed, Chairo to shiro, "Brown meet white, It's firm yet soft.", ¥35000
-Bed_2.jpg, Bed, Mijikakute shiroi, "It's small and adjustable according to your height.", ¥45000
-Bed_3.jpg, Bed, Nagakute shiroi, "It's separable and fit the whole family.", ¥55000
-Bed_4.jpg, Bed, Masshiro, "It's white, it's simple and it's flexible.", ¥40000 
-Bed_5.jpg, Bed, Roiyaru to howaito, "It's the best when it comes to comfort. it has built in heating and massage feature.", ¥70000
+Bed_1.jpg, Bed, Chikaku, "It's firm yet soft.", ¥40000
+Bed_2.jpg, Bed, Ofuburakku, "It can be adjusted according to your height.", ¥80000
+Bed_3.jpg, Bed, Neko hito, "This is a separable set suitable for the whole family.", ¥100000
+Bed_4.jpg, Bed, Kiyasume shiro, "It's lightweight and flexible.", ¥50000 
+Bed_5.jpg, Bed, Gaikan, "It's the best when it comes to comfort. It has built-in heating and massage feature.", ¥150000
+
+Painting_1.jpg, Shinju bara, "A set consist of four paintings.", ¥4000
+Painting_2.jpg, Funsha, "Classic black and white abstract painting.", ¥10000
+Painting_3.jpg, Supesu, "Painting of the throne.",¥6000
+Painting_4.jpg, Banka, "Abstract painting of fallen phoenix.", ¥40000
+Painting_5.jpg, Kaimamiru, "Realistic abstract painting of a heart.", ¥30000
+
+Sofa_1.jpg, Kyokusen, "Curvy minimalist futuristic sofa.", ¥80000
+Sofa_2.jpg, Kontena, "The most suitable sofa for big family.",¥60000
+Sofa_3.jpg, Osentikku, "Classic and authentic leather sofa.", ¥100000
+Sofa_4.jpg, Shinpuru, "It's simple yet comfortable.",¥30000
+Sofa_5.jpg, Katachi, "One set consist of an L shape sofa and two round sofa chairs.", ¥150000
+
+Table_1.jpg, , "Minimalist long table.", ¥18000
+Table_2.jpg, , "A set of children's table and chairs", ¥10000
+Table_3.jpg, , "Desk inspired from vernacular architecture.", ¥50000
+Table_4.jpg, , "Minimalist urban desk.", ¥20000
+Table_5.jpg, , "A set included abstract dining table and six chairs.", ¥100000
