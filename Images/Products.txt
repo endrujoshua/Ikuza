@@ -16,8 +16,8 @@ Sofa_3.jpg, Osentikku, "Classic and authentic leather sofa.", ¥100000
 Sofa_4.jpg, Shinpuru, "It's simple yet comfortable.",¥30000
 Sofa_5.jpg, Katachi, "One set consist of an L shape sofa and two round sofa chairs.", ¥150000
 
-Table_1.jpg, , "Minimalist long table.", ¥18000
-Table_2.jpg, , "A set of children's table and chairs", ¥10000
-Table_3.jpg, , "Desk inspired from vernacular architecture.", ¥50000
-Table_4.jpg, , "Minimalist urban desk.", ¥20000
-Table_5.jpg, , "A set included abstract dining table and six chairs.", ¥100000
+Table_1.jpg, Minimarisuto, "Minimalist long table.", ¥18000
+Table_2.jpg, Chisai, "A set of children's table and chairs", ¥10000
+Table_3.jpg, Kenchiku, "Desk inspired from vernacular architecture.", ¥50000
+Table_4.jpg, Toshi, "Minimalist urban desk.", ¥20000
+Table_5.jpg, Gaiyo, "A set included abstract dining table and six chairs.", ¥100000
