@@ -2,8 +2,8 @@ body{
   height: 100vh;
 }
 
-/* Homepage.html */
-/* Full Nav Bar for PC*/
+/***** Homepage.html *****/
+/** Full Nav Bar for PC **/
 .navbar-main{
   width: 100%;
   position: fixed;
@@ -278,15 +278,14 @@ body{
 
 @media only screen and (max-width: 600px) {
   #collapse-container-nav-secondary {float: left; width: 100%; margin-left: 2.5%;}
-  #dropdown-content-nav-secondary {text-align: center;}
-  #p1-dropdown-content-sosmed-nav {text-align: center;}
-  #p2-dropdown-content-sosmed-nav {text-align: center;}
-  #p3-dropdown-content-sosmed-nav {text-align: center;}
+  .a-dropdown-nav-main {text-align: center;}
+  .a-dropdown-nav-secondary {text-align: center;}
+  .a-sosmed-dropdown-nav {text-align: center;}
 } 
 
-/* Nav Bar End */
+/** Nav Bar End **/
 
-/* Layout of The Website */
+/** Layout of HomePage **/
 /* Right Side Container */
 .right-side-bar{
   width: 18.5%;
@@ -458,7 +457,7 @@ body{
   padding: 0;
 }
 
-/*Background image */
+/* Background image */
 body {
   background-image: url("Images/main1.jpg");
 -webkit-background-size: cover;
@@ -475,7 +474,7 @@ background-position: top 0px center;
   width: 100vw;
 }
 
-/*Animation */
+/* Animation */
 
 .slide-right {
   float:right;
@@ -502,7 +501,7 @@ background-position: top 0px center;
   }
 }
 
-/*Animation for H2 and container */
+/* Animation for H2 and container */
 .flex-parent{
   float: right;  
   border:dashed 3px;
@@ -545,10 +544,10 @@ background-color: rgba(0, 0, 0, 0.5);
   z-index:99;
 }
 
-/* End of Homepage.html */
+/***** End of Homepage.html *****/
 
 
-/* Gallery.html */ 
+/***** Gallery.html *****/ 
 .font-color-black{
   color: black;
 }
@@ -557,6 +556,7 @@ background-color: rgba(0, 0, 0, 0.5);
   border-color: black;
 }
 
+/** Nav Bar **/
 /* Dropdown Content */
 #dropdown-content-nav-secondary-gallery{
   display: none;
@@ -610,6 +610,95 @@ background-color: rgba(0, 0, 0, 0.5);
   text-align:left;
 }
 
+/** Nav Bar End **/
+
+/** Layout of The Gallery **/
+.product-container{
+  margin-top: 7.5vh;
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+}
+
+.insert-image-product{
+  width: 40vh;
+}
+
+.insert-name-product{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+
+  text-decoration: none;
+  float: left;
+
+  margin-top: 7.5px;
+  max-width: 40vh;
+}
+
+.insert-color-product{
+  text-align: right;
+}
+
+.insert-color-1{
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+
+  display: inline-block;
+  margin: 10px 2.5px;
+}
+
+.insert-color-2{
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+
+  display: inline-block;
+  margin: 10px 2.5px;
+}
+
+.insert-color-3{
+  height: 12px;
+  width: 12px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: black;
+
+  display: inline-block;
+  margin: 10px 2.5px;
+}
+
+.insert-description-product{
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  color: black;
+
+  padding: 7.5px 0 7.5px 0.5px;
+  margin-top: 5px;
+
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+
+  border-left: none;
+  border-right: none;
+  max-width: 40vh;
+}
 
 /* Background */
 #gallery_background{

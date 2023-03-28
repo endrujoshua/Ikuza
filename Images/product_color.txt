@@ -1,0 +1,23 @@
+Bed_1.jpg, Bed, #43443e, #888275
+Bed_2.jpg, Bed, #FFFFFF, #31312f
+Bed_3.jpg, Bed, #FFFFFF, #646d6f
+Bed_4.jpg, Bed, #e1e2e4
+Bed_5.jpg, Bed, #FFFFFF, #907157, #b6a58f
+
+Painting_1.jpg, #FFFFFF, #1e1f21
+Painting_2.jpg, #FFFFFF, #333534
+Painting_3.jpg, #60564a, #989488
+Painting_4.jpg, #c2d0d1, #282e31, 
+Painting_5.jpg, #FFFFFF, #121210
+
+Sofa_1.jpg, #FFFFFF
+Sofa_2.jpg, #FFFFFF, #8e9291
+Sofa_3.jpg, #121210, #6d7278
+Sofa_4.jpg, #FFFFFF
+Sofa_5.jpg, #FFFFFF, #283941
+
+Table_1.jpg, #FFFFFF
+Table_2.jpg, #FFFFFF
+Table_3.jpg, #FFFFFF, #6b4948
+Table_4.jpg, #FFFFFF, #452e26
+Table_5.jpg, #FFFFFF
