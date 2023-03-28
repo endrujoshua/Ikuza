@@ -5,19 +5,15 @@ CREATE TABLE product_detail(
     ProductCategory varchar(255),
     ProductName varchar(255),
     ProductDesc varchar(255),
-    ProductPrice DEC(5,2),
-    ProductColor1 INT,
-    ProductColor2 INT,
-    ProductColor3 INT,
+    ProductPrice varchar(255),
+    ProductColor1 varchar(255),
+    ProductColor2 varchar(255),
+    ProductColor3 varchar(255),
 )
 
 UPDATE ProductID
 SET ProductImage = 'Images/product/Bed_1.jpg'
-SET ProductCategory = 'Bed'
 SET ProductName = 'Chikaku'
 SET ProductDesc = "It's firm yet soft."
-SET ProductPrice = '40000'
-SET ProductColor1 = '43443e'
-SET ProductColor2 = '888275'
-SET ProductColor3 IS NULL
+SET ProductPrice = '¥40000'
 
