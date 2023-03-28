@@ -1,4 +1,4 @@
-CREATE DATABASE Product_db
+/*CREATE DATABASE Product_db
 CREATE TABLE category(
     CategoryID int NOT NULL AUTO_INCREMENT,
     CategoryName varchar(255)
@@ -25,4 +25,4 @@ CREATE TABLE colour_product{
     FOREIGN KEY (ProductID) REFERENCES product_detail(ProductID),
     FOREIGN KEY (ColourID) REFERENCES colour(ColourID)
 }
-Select * from *
+Select * from */
