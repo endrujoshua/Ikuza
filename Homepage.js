@@ -1,3 +1,5 @@
+
+
 const images = [
     "Images/main1.jpg","Images/main2.jpg", "Images/main3.jpg", "Images/main4.jpg"
   ];
