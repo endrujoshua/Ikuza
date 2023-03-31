@@ -6,7 +6,6 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>IKUZA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="Style.css">
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
 
 <!-- Add Firebase products that you want to use -->
@@ -57,15 +56,18 @@
 <!--Section for category-->
 <section>
 <h1>Form for Category</h1>
-<form>
+<form id="categoryform">
     <label for="CategoryName">Name:</label>
     <input type="text" id="CategoryName" name="CategoryName" required>
+    <label for="CategoryImg">Category Image:</label>
+    <input type="text" id="CategoryImg" name="CategoryImg" required>
   
     <button type="submit" id="category_submit">Submit</button>
   </form>
 </section>
 <script>
 const form = document.querySelector('form');
+const categoryform = document.getElementById('categoryform')
 const submitBtn = document.querySelector('#submit-btn');
 const category_btn = document.querySelector('#category_submit');
 //For products form
@@ -101,18 +103,21 @@ category_btn.addEventListener('click', (e) => {
 e.preventDefault(); // Prevent the default form submit action
 
 // Get the user input values from the form
-const CategoryName = form.CategoryName.value;
+console.log(categoryform.CategoryName.value);
+const CategoryName = categoryform.CategoryName.value;
+const CategoryImg = categoryform.CategoryImg.value;
 
 // Add the data to Firestore
 const firestore = firebase.firestore();
 const Category = firestore.collection("Category");
 
 Category.add({
-    CategoryName: CategoryName
+    CategoryName: CategoryName,
+    CategoryImg: CategoryImg
 })
 .then((docRef) => {
 console.log("Document written with ID: ", docRef.id);
-form.reset(); // Clear the form after submitting
+categoryform.reset(); // Clear the form after submitting
 })
 .catch((error) => {
 console.error("Error adding document: ", error);
