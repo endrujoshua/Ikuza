@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>IKUZA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <!-- Firebase Script-->
+    <!-- Image -->
+
+</head>
+<body>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
+      authDomain: "ikuza-f9f15.firebaseapp.com",
+      databaseURL: "https://ikuza-f9f15-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "ikuza-f9f15",
+      storageBucket: "ikuza-f9f15.appspot.com",
+      messagingSenderId: "332743558243",
+      appId: "1:332743558243:web:875110e97cbc185bfda456"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+        const firestore = firebase.firestore();
+  </script>
+<section>
+<H1>Form for Product</H1>
+<form>
+    <label for="ProductName">Name:</label>
+    <input type="text" id="ProductName" name="ProductName" required>
+  
+    <label for="ProductImage">Image/URL:</label>
+    <input type="text" id="ProductImage" name="ProductImage" required>
+  
+    <label for="ProductDesc">Description:</label>
+    <textarea type="text" id="ProductDesc" name="ProductDesc" required> </textarea>
+  
+    <label for="ProductPrice">Price:</label>
+    <input type="number" id="ProductPrice" name="ProductPrice" required>
+
+    <label for="Category name">Category:</label>
+    <select id="CategoryName" required>
+      </select>
+  
+    <button type="submit" id="submit-btn">Submit</button>
+  </form>
+</section>
+<!--Section for category-->
+<section>
+<h1>Form for Category</h1>
+<form>
+    <label for="CategoryName">Name:</label>
+    <input type="text" id="CategoryName" name="CategoryName" required>
+  
+    <button type="submit" id="category_submit">Submit</button>
+  </form>
+</section>
+<script>
+const form = document.querySelector('form');
+const submitBtn = document.querySelector('#submit-btn');
+const category_btn = document.querySelector('#category_submit');
+//For products form
+submitBtn.addEventListener('click', (e) => {
+e.preventDefault(); // Prevent the default form submit action
+
+// Get the user input values from the form
+const ProductName = form.ProductName.value;
+const ProductImage = form.ProductImage.value;
+const ProductDesc = form.ProductDesc.value;
+const ProductPrice = form.ProductPrice.value;
+
+// Add the data to Firestore
+const firestore = firebase.firestore();
+const product = firestore.collection("Product");
+
+product.add({
+    ProductName: ProductName,
+    ProductImage: ProductImage,
+    ProductDesc: ProductDesc,
+    ProductPrice: ProductPrice
+})
+.then((docRef) => {
+console.log("Document written with ID: ", docRef.id);
+form.reset(); // Clear the form after submitting
+})
+.catch((error) => {
+console.error("Error adding document: ", error);
+});
+});
+//Category Submit button
+category_btn.addEventListener('click', (e) => {
+e.preventDefault(); // Prevent the default form submit action
+
+// Get the user input values from the form
+const CategoryName = form.CategoryName.value;
+
+// Add the data to Firestore
+const firestore = firebase.firestore();
+const Category = firestore.collection("Category");
+
+Category.add({
+    CategoryName: CategoryName
+})
+.then((docRef) => {
+console.log("Document written with ID: ", docRef.id);
+form.reset(); // Clear the form after submitting
+})
+.catch((error) => {
+console.error("Error adding document: ", error);
+});
+});
+</script>
+  </body>
