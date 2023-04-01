@@ -107,7 +107,8 @@
     // Add the data to Firestore
     const firestore = firebase.firestore();
     const product = firestore.collection("Product");
-
+    
+     // Get the user input values from the form
     product.add({
         ProductName: ProductName,
         ProductImage: ProductImage,
@@ -131,7 +132,6 @@
     e.preventDefault(); // Prevent the default form submit action
 
     // Get the user input values from the form
-    console.log(categoryform.CategoryName.value);
     const CategoryName = categoryform.CategoryName.value;
     const CategoryImg = categoryform.CategoryImg.value;
 
@@ -160,14 +160,14 @@
     e.preventDefault(); // Prevent the default form submit action 
 
     // Get the user input values from the form 
-    console.log(colorform.colorform.value);
     const ColorName = colorform.ColorName.value;
     const ColorHex = colorform.ColorHex.value;
 
-    // Add hte data to firestore 
+    // Add the data to firestore 
     const firestore = firebase.firestore();
     const Color = firestore.collection("Color");
-
+    
+     // Get the user input values from the form
     Color.add({
     ColorName: ColorName,
     ColorHex: ColorHex
