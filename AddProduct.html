@@ -15,6 +15,7 @@
 <body>
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+    import { getFirestore } from "firebase/firestore";
 
     // Your web app's Firebase configuration
     const firebaseConfig = {
@@ -49,13 +50,10 @@
         <input type="number" id="ProductPrice" name="ProductPrice" required>
 
         <label for="CategoryName">Category:</label>
-        <select id="CategoryName" required>
-        </select>
+        <select id="CategoryName" required></select>
 
         <label for="ColorName">Color:</label>
-        <select id="ColorName" required>
-
-        </select>
+        <select id="ColorName" required></select>
     <button type="submit" id="product_submit">Submit</button>
     </form>
 </section>
@@ -93,7 +91,6 @@
     const category_btn = document.querySelector('#category_submit');
     const color_btn = document.querySelector('#color_submit');
 
-    //PRODUCT
     //Submit Button For products form
     product_btn.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default form submit action
@@ -126,7 +123,6 @@
     });
     });
 
-    //CATEGORY
     //Submit Button for category form
     category_btn.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default form submit action
@@ -154,7 +150,6 @@
     });
     });
 
-    //Color
     //Submit Button for color form 
     color_btn.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default form submit action 
