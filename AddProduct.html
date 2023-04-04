@@ -5,28 +5,30 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>IKUZA</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 
 <body>
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
-    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-firestore.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 
     // Your web app's Firebase configuration
     const firebaseConfig = {
-        apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
-        authDomain: "ikuza-f9f15.firebaseapp.com",
-        databaseURL: "https://ikuza-f9f15-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "ikuza-f9f15",
-        storageBucket: "ikuza-f9f15.appspot.com",
-        messagingSenderId: "332743558243",
-        appId: "1:332743558243:web:875110e97cbc185bfda456"
-    };
-
+  apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
+  authDomain: "ikuza-f9f15.firebaseapp.com",
+  databaseURL: "https://ikuza-f9f15-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "ikuza-f9f15",
+  storageBucket: "ikuza-f9f15.appspot.com",
+  messagingSenderId: "332743558243",
+  appId: "1:332743558243:web:875110e97cbc185bfda456"
+};
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const firestore = firebase.firestore();
+    const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+export{app, db }
 </script>
 
 <!-- Section for Product -->
