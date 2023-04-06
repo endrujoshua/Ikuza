@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>IKUZA</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+
+    <body>
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+            import { 
+                getFirestore, doc, getDoc, setDoc, collection, addDoc, updateDoc,deleteDoc  
+            } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js';
+            
+            const firebaseConfig = {
+              apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
+              authDomain: "ikuza-f9f15.firebaseapp.com",
+              databaseURL: "https://ikuza-f9f15-default-rtdb.asia-southeast1.firebasedatabase.app",
+              projectId: "ikuza-f9f15",
+              storageBucket: "ikuza-f9f15.appspot.com",
+              messagingSenderId: "332743558243",
+              appId: "1:332743558243:web:875110e97cbc185bfda456"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+        </script>
+
+        <!-- Form for Product -->
+        <section>
+            <h1>Form for Product</h1>
+            <form id="ProductForm">
+                <label for="ProductName">Product Name:</label>
+                <input type="text" id="ProductName" name="ProductName" required>
+
+                <label for="ProductImg">Product Image:</label>
+                <input type="text" id="ProductImg" name="ProductImg" required>
+
+                <label for="ProductCategory">Product Category:</label>
+                <select id="ProductCategory" required></select>
+
+                <label for="ProductColor">Product Color:</label>
+                <select id="ProductColor" required></select>
+
+                <label for="ProductDesc">Product Description:</label>
+                <input type="text" id="ProductDesc" name="ProductDesc" required>
+
+                <label for="ProductPrice">Product Price:</label>
+                <input type="number" id="ProductPrice" name="ProductPrice" required>
+
+                <button type="Submit" id="ProductSubmit">Submit</button>
+            </form> 
+        </section>
+
+        <!-- Form for Category -->
+        <section>
+            <h1>Form for Product Category</h1>
+            <form id="CategoryForm">
+                <label for="CategoryName">Category Name:</label>
+                <input type="text" id="CategoryName" name="CategoryName" required>
+
+                <label for="CategoryImg">Category Image:</label>
+                <input type="text" id="CategoryImg" name="CategoryImg" required>
+
+                <button type="Submit" id="CategorySubmit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Form for Color -->
+        <section>
+            <h1>Form for Product Color</h1>
+            <form id="ColorForm">
+                <label for="ColorHex">Color Hex:</label>
+                <input type="text" id="ColorHex" name="ColorHex" required>
+
+                <button type="Submit" id="ColorSubmit">Submit</button>
+            </form>
+        </section>
+
+        <script>
+            const ProductForm = document.getElementById('ProductForm');
+            const CategoryForm = document.getElementById('CategoryForm');
+            const ColorForm = document.getElementById('ColorForm');
+
+            const ProductSubmit = document.getElementById('ProductSubmit');
+            const CategorySubmit = document.getElementById('CategorySubmit');
+            const ColorSubmit = document.getElementById('ColorSubmit');
+
+            const ProductName = ProductForm.ProductName.value;
+            const ProductImg = ProductForm.ProductImg.value;
+            const ProductDesc = ProductForm.ProductDesc.value;
+            const ProductPrice = ProductForm.ProductDesc.value;
+        
+        </script>
+    </body>
+</html>
