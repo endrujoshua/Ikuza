@@ -81,12 +81,16 @@
             const ColorForm = document.getElementById('ColorForm');
             document.body.onload = async function(){
                 console.log("test");
-                const querySnapshot = await getDocs(collection(db, "Color"));
-                querySnapshot.forEach((doc) => {
+                const queryColor = await getDocs(collection(db, "Color"));
+                queryColor.forEach((doc) => {
                 // doc.data() is never undefined for query doc snapshots
                 console.log(doc.id);
                 });
-
+                const queryCategory = await getDocs(collection(db, "Category"));
+                queryCategory.forEach((doc) => {
+                // doc.data() is never undefined for query doc snapshots
+                console.log(doc.id);
+                });
             }
 
             const ProductSubmit = document.getElementById('ProductSubmit');
@@ -102,8 +106,10 @@
             const CategoryImg = CategoryForm.CategoryImg.value;
             // Color Form Value
             const ColorHex = ColorForm.ColorHex.value;
+
+            //submit form event listener
             //submit form
-            async function Productsubmit(event) {
+            async function Productsubmits() {
             await setDoc(doc(db, "Product",FieldValue.Increment(1) ), {
                     "ProductName" : ProductName,
                     "ProductImg" : ProductName,
@@ -113,20 +119,18 @@
                     "ColorID": ColorID
             });
             }
-            async function Categorysubmit(event) {
+            async function Categorysubmits() {
             await setDoc(doc(db, "Category",FieldValue.Increment(1) ), {
                     "CategoryName" : CategoryName,
                     "CategoryImg" : CategoryImg
             });
             }
-            async function Colorsubmit(event) {
-            await setDoc(doc(db, "Color",FieldValue.Increment(1) ), {
+            async function Colorsubmits() {
+            await setDoc(doc(db, "Color","waaa" ), {
                     "ColorHex" : ProductName,
             });
+            console.log("submitted");
             }
-            ProductSubmit.addEventListener("submit", Productsubmit);
-            CategorySubmit.addEventListener("submit", Categorysubmit);
-            ColorSubmit.addEventListener("submit", Colorsubmit);
         </script>
     </body>
 </html>
