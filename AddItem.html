@@ -7,26 +7,6 @@
     </head>
 
     <body>
-        <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-            import { 
-                getFirestore, doc, getDoc, setDoc, collection, addDoc, updateDoc,deleteDoc  
-            } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js';
-            
-            const firebaseConfig = {
-              apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
-              authDomain: "ikuza-f9f15.firebaseapp.com",
-              databaseURL: "https://ikuza-f9f15-default-rtdb.asia-southeast1.firebasedatabase.app",
-              projectId: "ikuza-f9f15",
-              storageBucket: "ikuza-f9f15.appspot.com",
-              messagingSenderId: "332743558243",
-              appId: "1:332743558243:web:875110e97cbc185bfda456"
-            };
-
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-        </script>
-
         <!-- Form for Product -->
         <section>
             <h1>Form for Product</h1>
@@ -77,21 +57,76 @@
                 <button type="Submit" id="ColorSubmit">Submit</button>
             </form>
         </section>
-
-        <script>
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+            import { 
+                getFirestore, doc, query, where, getDocs, setDoc, collection, addDoc, updateDoc,deleteDoc  
+            } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js';
+            
+            const firebaseConfig = {
+              apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
+              authDomain: "ikuza-f9f15.firebaseapp.com",
+              databaseURL: "https://ikuza-f9f15-default-rtdb.asia-southeast1.firebasedatabase.app",
+              projectId: "ikuza-f9f15",
+              storageBucket: "ikuza-f9f15.appspot.com",
+              messagingSenderId: "332743558243",
+              appId: "1:332743558243:web:875110e97cbc185bfda456"
+            };
+    
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            // Get form
             const ProductForm = document.getElementById('ProductForm');
             const CategoryForm = document.getElementById('CategoryForm');
             const ColorForm = document.getElementById('ColorForm');
+            document.body.onload = async function(){
+                console.log("test");
+                const querySnapshot = await getDocs(collection(db, "Color"));
+                querySnapshot.forEach((doc) => {
+                // doc.data() is never undefined for query doc snapshots
+                console.log(doc.id);
+                });
+
+            }
 
             const ProductSubmit = document.getElementById('ProductSubmit');
             const CategorySubmit = document.getElementById('CategorySubmit');
             const ColorSubmit = document.getElementById('ColorSubmit');
-
+            // Product form Value
             const ProductName = ProductForm.ProductName.value;
             const ProductImg = ProductForm.ProductImg.value;
             const ProductDesc = ProductForm.ProductDesc.value;
             const ProductPrice = ProductForm.ProductDesc.value;
-        
+            // Category Form Value
+            const CategoryName = CategoryForm.CategoryName.value;
+            const CategoryImg = CategoryForm.CategoryImg.value;
+            // Color Form Value
+            const ColorHex = ColorForm.ColorHex.value;
+            //submit form
+            async function Productsubmit(event) {
+            await setDoc(doc(db, "Product",FieldValue.Increment(1) ), {
+                    "ProductName" : ProductName,
+                    "ProductImg" : ProductName,
+                    "ProductDesc" : ProductName,
+                    "ProductPrice" : ProductName,
+                    "CategoryID" : ProductName,
+                    "ColorID": ColorID
+            });
+            }
+            async function Categorysubmit(event) {
+            await setDoc(doc(db, "Category",FieldValue.Increment(1) ), {
+                    "CategoryName" : CategoryName,
+                    "CategoryImg" : CategoryImg
+            });
+            }
+            async function Colorsubmit(event) {
+            await setDoc(doc(db, "Color",FieldValue.Increment(1) ), {
+                    "ColorHex" : ProductName,
+            });
+            }
+            ProductSubmit.addEventListener("submit", Productsubmit);
+            CategorySubmit.addEventListener("submit", Categorysubmit);
+            ColorSubmit.addEventListener("submit", Colorsubmit);
         </script>
     </body>
 </html>
