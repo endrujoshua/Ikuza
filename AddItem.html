@@ -57,10 +57,11 @@
                 <button type="Submit" id="ColorSubmit">Submit</button>
             </form>
         </section>
+        
         <script type="module">
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
             import { 
-                getFirestore, doc, query, where, getDocs, setDoc, collection, addDoc, updateDoc,deleteDoc  
+                getFirestore, doc, query, where, getDocs, setDoc, collection, addDoc, updateDoc,deleteDoc
             } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js';
             
             const firebaseConfig = {
@@ -107,15 +108,14 @@
             // Color Form Value
             const ColorHex = ColorForm.ColorHex.value;
 
-            //submit form event listener
             //submit form
             async function Productsubmits() {
             await setDoc(doc(db, "Product",FieldValue.Increment(1) ), {
                     "ProductName" : ProductName,
-                    "ProductImg" : ProductName,
-                    "ProductDesc" : ProductName,
-                    "ProductPrice" : ProductName,
-                    "CategoryID" : ProductName,
+                    "ProductImg" : ProductImg,
+                    "ProductDesc" : ProductDesc,
+                    "ProductPrice" : ProductPrice,
+                    "CategoryID" : CategoryID,
                     "ColorID": ColorID
             });
             }
@@ -126,11 +126,29 @@
             });
             }
             async function Colorsubmits() {
-            await setDoc(doc(db, "Color","waaa" ), {
-                    "ColorHex" : ProductName,
+            await setDoc(doc(db, "Color",FieldValue,Increment(1) ), {
+                    "ColorHex" : ColorHex,
             });
             console.log("submitted");
             }
+
+            //Query for categoryName
+            const categoryRef = collection(db, "Category");
+            const queryCategoryName = query(categoryRef, where("CategoryName","==",true));
+            const queryCategorySnapshot = await getDocs(queryCategoryName);
+            queryCategorySnapshot.forEach((doc)=> {
+                console.log(doc.id,"=>",doc.data());
+            })
+
+            //Query for colorHex
+            const colorRef = collection(db,"Color");
+            const queryColorHex = query(colorRef, where("ColorHex","==",true));
+            const queryColorSnapshot = await getDocs(queryColorHex);
+            queryColorSnapshot.forEach((doc)=>{ 
+                console.log(doc.id,"=>",doc.data());
+            })
+            
+
         </script>
     </body>
 </html>
