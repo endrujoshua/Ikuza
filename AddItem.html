@@ -20,16 +20,13 @@
                 <label for="ProductCategory">Product Category:</label>
                 <select id="ProductCategory" required></select>
 
-                <label for="ProductColor">Product Color:</label>
-                <select id="ProductColor" required></select>
-
                 <label for="ProductDesc">Product Description:</label>
                 <input type="text" id="ProductDesc" name="ProductDesc" required>
 
                 <label for="ProductPrice">Product Price:</label>
                 <input type="number" id="ProductPrice" name="ProductPrice" required>
 
-                <button type="Submit" id="ProductSubmit">Submit</button>
+                <button type="submit" id="ProductSubmit">Submit</button>
             </form> 
         </section>
 
@@ -43,7 +40,7 @@
                 <label for="CategoryImg">Category Image:</label>
                 <input type="text" id="CategoryImg" name="CategoryImg" required>
 
-                <button type="Submit" id="CategorySubmit">Submit</button>
+                <button type="submit" id="CategorySubmit">Submit</button>
             </form>
         </section>
 
@@ -51,10 +48,12 @@
         <section>
             <h1>Form for Product Color</h1>
             <form id="ColorForm">
+                <label for="ColorName">Color Name:</label>
+                <input type="text" id="ColorName" name="ColorName" required>
                 <label for="ColorHex">Color Hex:</label>
                 <input type="text" id="ColorHex" name="ColorHex" required>
 
-                <button type="Submit" id="ColorSubmit">Submit</button>
+                <button type="submit" id="ColorSubmit">Submit</button>
             </form>
         </section>
         
@@ -81,7 +80,7 @@
             const CategoryForm = document.getElementById('CategoryForm');
             const ColorForm = document.getElementById('ColorForm');
             document.body.onload = async function(){
-                console.log("test");
+               /* 
                 const queryColor = await getDocs(collection(db, "Color"));
                 queryColor.forEach((doc) => {
                 // doc.data() is never undefined for query doc snapshots
@@ -92,6 +91,12 @@
                 // doc.data() is never undefined for query doc snapshots
                 console.log(doc.id);
                 });
+                */
+                await setDoc(doc(db, "citiewasdfasds", "wasdadafew"), {
+                name: "Los Angeles",
+                state: "CA",
+                 country: "USA"
+            });
             }
 
             const ProductSubmit = document.getElementById('ProductSubmit');
@@ -107,31 +112,37 @@
             const CategoryImg = CategoryForm.CategoryImg.value;
             // Color Form Value
             const ColorHex = ColorForm.ColorHex.value;
-
+            const ColorName = ColorForm.ColorName.value;
             //submit form
-            async function Productsubmits() {
-            await setDoc(doc(db, "Product",FieldValue.Increment(1) ), {
+            async function Productsubmits(event) {
+            await addDoc(collection(db, "Product"), {
                     "ProductName" : ProductName,
                     "ProductImg" : ProductImg,
                     "ProductDesc" : ProductDesc,
                     "ProductPrice" : ProductPrice,
-                    "CategoryID" : CategoryID,
-                    "ColorID": ColorID
+                    "CategoryID" : CategoryID
             });
             }
-            async function Categorysubmits() {
-            await setDoc(doc(db, "Category",FieldValue.Increment(1) ), {
+            async function Categorysubmits(event) {
+            await addDoc(collection(db, "Category"), {
                     "CategoryName" : CategoryName,
                     "CategoryImg" : CategoryImg
             });
             }
-            async function Colorsubmits() {
-            await setDoc(doc(db, "Color",FieldValue,Increment(1) ), {
-                    "ColorHex" : ColorHex,
+            async function Colorsubmits(event) {
+                console.log("Trying");
+            await setDoc(doc(db, "citiewasdfasds", "wasdadafew"), {
+                name: "Los Angeles",
+                state: "CA",
+                 country: "USA"
             });
-            console.log("submitted");
+            console.log("Trying");
             }
 
+            //Event Listener
+            ProductForm.addEventListener("submit", Productsubmits);
+            CategoryForm.addEventListener("submit", Categorysubmits);
+            ColorForm.addEventListener("submit", Colorsubmits);
             //Query for categoryName
             const categoryRef = collection(db, "Category");
             const queryCategoryName = query(categoryRef, where("CategoryName","==",true));
@@ -147,7 +158,6 @@
             queryColorSnapshot.forEach((doc)=>{ 
                 console.log(doc.id,"=>",doc.data());
             })
-            
 
         </script>
     </body>
