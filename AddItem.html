@@ -80,7 +80,7 @@
             const CategoryForm = document.getElementById('CategoryForm');
             const ColorForm = document.getElementById('ColorForm');
             document.body.onload = async function(){
-               /* 
+               
                 const queryColor = await getDocs(collection(db, "Color"));
                 queryColor.forEach((doc) => {
                 // doc.data() is never undefined for query doc snapshots
@@ -91,11 +91,6 @@
                 // doc.data() is never undefined for query doc snapshots
                 console.log(doc.id);
                 });
-                */
-                await addDoc(collection(db, "Category"), {
-                    "CategoryName" : CategoryName,
-                    "CategoryImg" : CategoryImg
-            });
             }
 
             const ProductSubmit = document.getElementById('ProductSubmit');
@@ -122,12 +117,17 @@
             });
             }
             CategorySubmit.onclick =  async function Categorysubmits() {
+                await addDoc(collection(db, "Category"), {
+                    "CategoryName" : CategoryName,
+                    "CategoryImg" : CategoryImg
+            });
             }
             ColorSubmit.onclick = async function Colorsubmits() {
-                console.log("Trying");  
+                console.log(ColorForm.ColorHex.value);  
+                console.log(ColorForm.ColorName.value);  
                 await addDoc(collection(db, "Color"), {
-                    ColorName : "ColorName",
-                    ColorHex : "ColorHex"
+                    "ColorHex" : ColorHex,
+                    "ColorName" : ColorName
             });
             console.log("Trying");
             }
