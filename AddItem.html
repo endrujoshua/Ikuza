@@ -91,6 +91,10 @@
                 // doc.data() is never undefined for query doc snapshots
                 console.log(doc.id);
                 });
+
+                await addDoc(collection(db, "DumpData"), {
+                    "DumpData" : "L"
+            });
             }
 
             const ProductSubmit = document.getElementById('ProductSubmit');
@@ -132,23 +136,6 @@
             console.log("Trying");
             }
 
-            //Event Listener
-
-            //Query for categoryName
-            const categoryRef = collection(db, "Category");
-            const queryCategoryName = query(categoryRef, where("CategoryName","==",true));
-            const queryCategorySnapshot = await getDocs(queryCategoryName);
-            queryCategorySnapshot.forEach((doc)=> {
-                console.log(doc.id,"=>",doc.data());
-            })
-
-            //Query for colorHex
-            const colorRef = collection(db,"Color");
-            const queryColorHex = query(colorRef, where("ColorHex","==",true));
-            const queryColorSnapshot = await getDocs(queryColorHex);
-            queryColorSnapshot.forEach((doc)=>{ 
-                console.log(doc.id,"=>",doc.data());
-            })
 
         </script>
     </body>
