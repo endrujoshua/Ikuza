@@ -125,10 +125,9 @@
             }
             ColorSubmit.onclick = async function Colorsubmits() {
                 console.log("Trying");  
-            await setDoc(doc(db, "citiewasdfasdsasdfasdf", "wasdadafewasdawdadswasdfasdfasd"), {
-                name: "Los Angeleawdasds",
-                state: "CA",
-                 country: "USA"
+                await addDoc(collection(db, "Color"), {
+                    ColorName : "ColorName",
+                    ColorHex : "ColorHex"
             });
             console.log("Trying");
             }
