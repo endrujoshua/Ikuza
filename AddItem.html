@@ -130,8 +130,8 @@
                 console.log(ColorForm.ColorHex.value);  
                 console.log(ColorForm.ColorName.value);  
                 await addDoc(collection(db, "Color"), {
-                    "ColorHex" : ColorHex,
-                    "ColorName" : ColorName
+                    "ColorHex" : ColorHex.,
+                    "ColorName" : ColorName.text
             });
             console.log("Trying");
             }
