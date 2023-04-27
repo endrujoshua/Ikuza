@@ -17,7 +17,10 @@
 </head>
 <body>
 <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.0/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+            import { 
+                getFirestore, doc, query, where, getDocs, setDoc, collection, addDoc, updateDoc,deleteDoc
+            } from 'https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js';
     // Your web app's Firebase configuration
     const firebaseConfig = {
       apiKey: "AIzaSyDF0P_LS6mmygNUu4OF2cze2cAAg1sl01k",
@@ -31,10 +34,57 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
         const firestore = firebase.firestore();
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+// Initialize Cloud Firestore and get a reference to the service
+        const db = getFirestore(app);
+        document.body.onload = async function(){
+  console.log("Logging In");
+  //Product Select
+  const Categoryselect = document.getElementById('Categoryselect');
+  const Colorselect = document.getElementById('Colorselect');
+
+// Retrieve the product data from Firebase
+const querySnapshot = await getDocs(collection(db, "Category"));
+const queryColor = await getDocs(collection(db, "Color"));
+console.log("Logging In");
+querySnapshot.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data().CategoryName);
+
+    // Create a new option element for each product name
+    const option = document.createElement('option');
+
+    // Set the value of the option element to the product name
+    option.value = doc.id;
+
+    // Set the text of the option element to the product name
+    option.textContent = doc.data().CategoryName;
+
+    // Append the option element to the product select element
+    Categoryselect.appendChild(option);
+  });
+  queryColor.forEach((doc) => {
+    // doc.data() is never undefined for query doc snapshots
+    console.log(doc.id, " => ", doc.data().ColorName);
+
+    // Create a new option element for each product name
+    const option = document.createElement('option');
+
+    // Set the value of the option element to the product name
+    option.value = doc.id;
+
+    // Set the text of the option element to the product name
+    option.textContent = doc.data().ColorName;
+
+    // Append the option element to the product select element
+    Colorselect.appendChild(option);
+  });
+}
   </script>
 <section>
 <H1>Form for Product</H1>
-<form>
+<form id="ProductForm">
     <label for="ProductName">Name:</label>
     <input type="text" id="ProductName" name="ProductName" required>
   
@@ -47,8 +97,12 @@
     <label for="ProductPrice">Price:</label>
     <input type="number" id="ProductPrice" name="ProductPrice" required>
 
-    <label for="Category name">Category:</label>
-    <select id="CategoryName" required>
+    <label for="Categoryselect">Category:</label>
+    <select id="Categoryselect" required>
+      </select>
+
+      <label for="Colorselect">Color:</label>
+    <select id="Colorselect" required>
       </select>
   
     <button type="submit" id="submit-btn">Submit</button>
@@ -57,17 +111,35 @@
 <!--Section for category-->
 <section>
 <h1>Form for Category</h1>
-<form>
+<form id="CategoryForm">
     <label for="CategoryName">Name:</label>
     <input type="text" id="CategoryName" name="CategoryName" required>
   
     <button type="submit" id="category_submit">Submit</button>
   </form>
 </section>
-<script>
-const form = document.querySelector('form');
+<section>
+  <h1>Form for Color</h1>
+  <form id="ColorForm">
+      <label for="ColorName">Name:</label>
+      <input type="text" id="ColorName" name="ColorName" required>
+      <label for="ColorHex">Color:</label>
+      <input type="color" id="ColorHex" name="ColorHex" value="#ff0000">
+    
+      <button type="submit" id="color_submit">Submit</button>
+    </form>
+  </section>
+<script type="module">
+  //Calling all Form
+
+const form = document.getElementById("ProductForm");
+const Categoryform = document.getElementById('CategoryForm');
+const Colorform = document.getElementById('ColorForm');
 const submitBtn = document.querySelector('#submit-btn');
 const category_btn = document.querySelector('#category_submit');
+const color_btn = document.querySelector('#color_submit');
+
+//ProductForm Onload
 //For products form
 submitBtn.addEventListener('click', (e) => {
 e.preventDefault(); // Prevent the default form submit action
@@ -77,6 +149,8 @@ const ProductName = form.ProductName.value;
 const ProductImage = form.ProductImage.value;
 const ProductDesc = form.ProductDesc.value;
 const ProductPrice = form.ProductPrice.value;
+const CategorySelect = form.CategorySelect.value;
+const ColorSelect = form.ColorSelect.value;
 
 // Add the data to Firestore`1
 const firestore = firebase.firestore();
@@ -86,7 +160,9 @@ product.add({
     ProductName: ProductName,
     ProductImage: ProductImage,
     ProductDesc: ProductDesc,
-    ProductPrice: ProductPrice
+    ProductPrice: ProductPrice,
+    Category : CategorySelect,
+    Color : ColorSelect
 })
 .then((docRef) => {
 console.log("Document written with ID: ", docRef.id);
@@ -101,7 +177,7 @@ category_btn.addEventListener('click', (e) => {
 e.preventDefault(); // Prevent the default form submit action
 
 // Get the user input values from the form
-const CategoryName = form.CategoryName.value;
+const CategoryName = Categoryform.CategoryName.value;
 
 // Add the data to Firestore
 const firestore = firebase.firestore();
@@ -112,11 +188,37 @@ Category.add({
 })
 .then((docRef) => {
 console.log("Document written with ID: ", docRef.id);
-form.reset(); // Clear the form after submitting
+Categoryform.reset(); // Clear the form after submitting
 })
 .catch((error) => {
 console.error("Error adding document: ", error);
 });
+
+});
+
+color_btn.addEventListener('click', (e) => {
+e.preventDefault(); // Prevent the default form submit action
+
+// Get the user input values from the form
+const ColorName = ColorForm.ColorName.value;
+const ColorHex = ColorForm.ColorHex.value;
+
+// Add the data to Firestore
+const firestore = firebase.firestore();
+const Color = firestore.collection("Color");
+
+Color.add({
+  ColorName: ColorName,
+  ColorHex: ColorHex
+})
+.then((docRef) => {
+console.log("Document written with ID: ", docRef.id);
+Categoryform.reset(); // Clear the form after submitting
+})
+.catch((error) => {
+console.error("Error adding document: ", error);
+});
+
 });
 </script>
   </body>
