@@ -65,20 +65,21 @@ querySnapshot.forEach((doc) => {
     Categoryselect.appendChild(option);
   });
   queryColor.forEach((doc) => {
-    // doc.data() is never undefined for query doc snapshots
-    console.log(doc.id, " => ", doc.data().ColorName);
+    const colorsDiv = document.getElementById('colors');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = doc.id;
+    checkbox.name = 'colors';
+    checkbox.value = doc.data().ColorName;
 
-    // Create a new option element for each product name
-    const option = document.createElement('option');
+    // Create a label element for the checkbox input
+    const label = document.createElement('label');
+    label.htmlFor = doc.id;
+    label.textContent = doc.data().ColorName;
 
-    // Set the value of the option element to the product name
-    option.value = doc.id;
-
-    // Set the text of the option element to the product name
-    option.textContent = doc.data().ColorName;
-
-    // Append the option element to the product select element
-    Colorselect.appendChild(option);
+    // Append the checkbox and label elements to the colors div
+    colorsDiv.appendChild(checkbox);
+    colorsDiv.appendChild(label);
   });
 }
   </script>
@@ -101,9 +102,9 @@ querySnapshot.forEach((doc) => {
     <select id="Categoryselect" required>
       </select>
 
-      <label for="Colorselect">Color:</label>
-    <select id="Colorselect" required>
-      </select>
+      <div id="colors">
+
+      </div>
   
     <button type="submit" id="submit-btn">Submit</button>
   </form>
