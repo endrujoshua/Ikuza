@@ -683,8 +683,8 @@ background-color: rgba(0, 0, 0, 0.5);
 
 /***** AddProduct.html *****/
 .outerBox{
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 400px;
 
   border-width: 1px;
   border-style: solid;
@@ -692,19 +692,53 @@ background-color: rgba(0, 0, 0, 0.5);
   display: inline-block;
 }
 
-.innerBox{
-  height: 20px;
-  width: 20px;
+#selectBox_1{
+  height: 30px;
+  width: 30px;
   background-color: red;
 
-  padding: none;
-  margin: none;
-}
-
-.innerBox:hover{
+  border-radius: 50%;
   border-width: 1px;
   border-style: solid;
   border-color: black;
+
+  margin: 5px 10px 5px 5px;
+}
+
+#selectBox_2{
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+  margin: 5px 10px 5px 5px;
+}
+
+#selectBox_3{
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+
+  margin: 5px 10px 5px 5px;
+}
+
+.innerBox{
+  height: 20px;
+  width: 20px;
+  background-color: purple;
+  border-radius: 50%;
+
+  display: inline-block;
+  margin: 5px 10px 5px 5px;
 }
 
 #addProduct_background{
