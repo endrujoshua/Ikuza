@@ -65,21 +65,21 @@ querySnapshot.forEach((doc) => {
     Categoryselect.appendChild(option);
   });
   queryColor.forEach((doc) => {
-    const colorsDiv = document.getElementById('colors');
+    const colorsDiv = document.getElementById('outerBox');
+    const innerBox = document.createElement('div');
+    innerBox.name="innerBox";
+    innerBox.className="innerBox"; 
+    console.log(doc.data().ColorHex);
+    innerBox.style.backgroundColor= doc.data().ColorHex;
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.id = doc.id;
     checkbox.name = 'colors';
-    checkbox.value = doc.data().ColorName;
-
-    // Create a label element for the checkbox input
-    const label = document.createElement('label');
-    label.htmlFor = doc.id;
-    label.textContent = doc.data().ColorName;
+    checkbox.value = doc.id;
 
     // Append the checkbox and label elements to the colors div
-    colorsDiv.appendChild(checkbox);
-    colorsDiv.appendChild(label);
+    colorsDiv.appendChild(innerBox);
+    innerBox.appendChild(checkbox);
   });
 }
   </script>
