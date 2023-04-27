@@ -654,34 +654,6 @@ background-color: rgba(0, 0, 0, 0.5);
   margin: 10px 2.5px;
 }
 
-.insert-color-2{
-  height: 12px;
-  width: 12px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: black;
-
-  display: inline-block;
-  margin: 10px 2.5px;
-}
-
-.insert-color-3{
-  height: 12px;
-  width: 12px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: black;
-
-  display: inline-block;
-  margin: 10px 2.5px;
-}
-
 .insert-description-product{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -705,3 +677,5 @@ background-color: rgba(0, 0, 0, 0.5);
   background-color: white;
   background-image: none;
 }
+
+/***** End of Gallery.html *****/ 
