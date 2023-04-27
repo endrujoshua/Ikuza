@@ -15,7 +15,7 @@
     <!-- Image -->
 
 </head>
-<body>
+<body id="addProduct_background">
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
             import { 
@@ -103,7 +103,9 @@ querySnapshot.forEach((doc) => {
       </select>
 
       <div id="colors">
-
+        <div class="outerBox">
+          <div class="innerBox"></div>
+        </div>
       </div>
   
     <button type="submit" id="submit-btn">Submit</button>

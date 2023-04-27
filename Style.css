@@ -679,3 +679,35 @@ background-color: rgba(0, 0, 0, 0.5);
 }
 
 /***** End of Gallery.html *****/ 
+
+
+/***** AddProduct.html *****/
+.outerBox{
+  height: 200px;
+  width: 200px;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+}
+
+.innerBox{
+  height: 20px;
+  width: 20px;
+  background-color: red;
+
+  padding: none;
+  margin: none;
+}
+
+.innerBox:hover{
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#addProduct_background{
+  background-color: white;
+  background-image: none;
+}
