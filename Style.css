@@ -682,52 +682,62 @@ background-color: rgba(0, 0, 0, 0.5);
 
 
 /***** AddProduct.html *****/
-.outerBox{
-  height: 140px;
-  width: 400px;
+.flexContainer{
+  min-height: 120px;
+  min-width: 400px;
 
   border-width: 1px;
   border-style: solid;
   border-color: black;
+
+  display: flex;
+  flex-direction:row;
 }
 
-#selectBox_1{
+#selectColor_1{
   height: 30px;
   width: 30px;
-  background-color: red;
+  background-color: none;
 
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: grey;
 
   margin: 5px 10px 5px 5px;
 }
 
-#selectBox_2{
+#selectColor_2{
   height: 30px;
   width: 30px;
-  background-color: blue;
+  background-color: none;
 
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: grey;
 
   margin: 5px 10px 5px 5px;
 }
 
-#selectBox_3{
+#selectColor_3{
   height: 30px;
   width: 30px;
-  background-color: yellow;
+  background-color: none;
 
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
-  border-color: black;
+  border-color: grey;
 
   margin: 5px 10px 5px 5px;
+}
+
+.flexContainer_2{
+  display: flex;
+  flex-wrap: wrap;
+  align-content:flex-start;
+  margin: 5px 0 5px 0;
 }
 
 .innerBox{
@@ -736,8 +746,8 @@ background-color: rgba(0, 0, 0, 0.5);
   background-color: purple;
   border-radius: 50%;
 
-  display: inline-block;
-}
+  margin: 0 2.5px 2.5px 2.5px;
+} 
 
 #addProduct_background{
   background-color: white;
