@@ -84,21 +84,21 @@ querySnapshot.forEach((doc) => {
 }
   </script>
 <section>
-<H1>Form for Product</H1>
+<H1 class="formFont">Form for Product</H1>
 <form id="ProductForm">
-    <label for="ProductName">Name:</label>
+    <label for="ProductName" class="formFont">Name:</label>
     <input type="text" id="ProductName" name="ProductName" required>
   
-    <label for="ProductImage">Image/URL:</label>
+    <label for="ProductImage" class="formFont">Image/URL:</label>
     <input type="text" id="ProductImage" name="ProductImage" required>
   
-    <label for="ProductDesc">Description:</label>
+    <label for="ProductDesc" class="formFont">Description:</label>
     <textarea type="text" id="ProductDesc" name="ProductDesc" required> </textarea>
   
-    <label for="ProductPrice">Price:</label>
+    <label for="ProductPrice" class="formFont">Price:</label>
     <input type="number" id="ProductPrice" name="ProductPrice" required>
 
-    <label for="Categoryselect">Category:</label>
+    <label for="Categoryselect" class="formFont">Category:</label>
     <select id="Categoryselect" required>
       </select>
 
@@ -123,20 +123,20 @@ querySnapshot.forEach((doc) => {
 </section>
 <!--Section for category-->
 <section>
-<h1>Form for Category</h1>
+<h1 class="formFont">Form for Category</h1>
 <form id="CategoryForm">
-    <label for="CategoryName">Name:</label>
+    <label for="CategoryName" class="formFont">Name:</label>
     <input type="text" id="CategoryName" name="CategoryName" required>
   
     <button type="submit" id="category_submit">Submit</button>
   </form>
 </section>
 <section>
-  <h1>Form for Color</h1>
+  <h1 class="formFont">Form for Color</h1>
   <form id="ColorForm">
-      <label for="ColorName">Name:</label>
+      <label for="ColorName" class="formFont">Name:</label>
       <input type="text" id="ColorName" name="ColorName" required>
-      <label for="ColorHex">Color:</label>
+      <label for="ColorHex" class="formFont">Color Hex:</label>
       <input type="color" id="ColorHex" name="ColorHex" value="#ff0000">
     
       <button type="submit" id="color_submit">Submit</button>
