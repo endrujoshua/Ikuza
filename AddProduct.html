@@ -48,6 +48,7 @@
 const querySnapshot = await getDocs(collection(db, "Category"));
 const queryColor = await getDocs(collection(db, "Color"));
 console.log("Logging In");
+// Putting all the Category into things
 querySnapshot.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots
     console.log(doc.id, " => ", doc.data().CategoryName);
@@ -65,7 +66,7 @@ querySnapshot.forEach((doc) => {
     Categoryselect.appendChild(option);
   });
   queryColor.forEach((doc) => {
-    const colorsDiv = document.getElementById('outerBox');
+    const colorsDiv = document.getElementById('flexContainer_2');
     const innerBox = document.createElement('div');
     innerBox.name="innerBox";
     innerBox.className="innerBox"; 
@@ -76,6 +77,7 @@ querySnapshot.forEach((doc) => {
     checkbox.id = doc.id;
     checkbox.name = 'colors';
     checkbox.value = doc.id;
+    console.log(innerBox);
 
     // Append the checkbox and label elements to the colors div
     colorsDiv.appendChild(innerBox);
@@ -106,15 +108,15 @@ querySnapshot.forEach((doc) => {
 
         <div class="flexContainer">
           <div>
-            <div id="selectColor_1"></div>
-            <div id="selectColor_2"></div>
-            <div id="selectColor_3"></div>
+            <div id="selectColor_1" class="ParentBox"></div>
+            <div id="selectColor_2" class="ParentBox"></div>
+            <div id="selectColor_3" class="ParentBox"></div>
           </div>
 
-          <div class="flexContainer_2">
+          <div id="flexContainer_2">
             <div class="innerBox"></div>
           </div>
-
+          
         </div>
       </div>
       
@@ -169,6 +171,7 @@ const ColorSelect = form.ColorSelect.value;
 const firestore = firebase.firestore();
 const product = firestore.collection("Product");
 
+// Add Data Product
 product.add({
     ProductName: ProductName,
     ProductImage: ProductImage,
