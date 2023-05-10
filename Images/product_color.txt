@@ -7,7 +7,7 @@ Bed_5.jpg, Bed, #FFFFFF, #907157, #b6a58f
 Painting_1.jpg, #FFFFFF, #1e1f21
 Painting_2.jpg, #FFFFFF, #333534
 Painting_3.jpg, #60564a, #989488
-Painting_4.jpg, #c2d0d1, #282e31, 
+Painting_4.jpg, #c2d0d1, #282e31
 Painting_5.jpg, #FFFFFF, #121210
 
 Sofa_1.jpg, #FFFFFF
