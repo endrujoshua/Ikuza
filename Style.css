@@ -783,12 +783,12 @@ background-color: rgba(0, 0, 0, 0.5);
 
 /* On mouse-over, add opacity */
 .flexContainer_2:hover input ~ .checkmark {
-  fill-opacity: inherit;
+  opacity: 0.8;
 }
 
 /* When the checkbox is checked, add opacity */
 .flexContainer_2 input:checked ~ .checkmark {
-  fill-opacity: inherit;
+  opacity: 0.8;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
