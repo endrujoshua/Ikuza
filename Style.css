@@ -748,7 +748,6 @@ background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-wrap: wrap;
   align-content:flex-start;
-  display: inline-block;
   margin: 5px 0 5px 0;
   
   cursor:pointer;
