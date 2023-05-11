@@ -749,7 +749,7 @@ background-color: rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
   align-content:flex-start;
   margin: 5px 0 5px 0;
-  
+
   cursor:pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -815,9 +815,4 @@ background-color: rgba(0, 0, 0, 0.5);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 
-}
-
-#addProduct_background{
-  background-color: white;
-  background-image: none;
 }
