@@ -68,8 +68,8 @@ querySnapshot.forEach((doc) => {
   queryColor.forEach((doc) => {
     const colorsDiv = document.getElementById('flexContainer_2');
     const innerBox = document.createElement('div');
-    innerBox.name="innerBox";
-    innerBox.className="innerBox"; 
+    innerBox.name="checkmark";
+    innerBox.className="checkmark"; 
     console.log(doc.data().ColorHex);
     innerBox.style.backgroundColor= doc.data().ColorHex;
     const checkbox = document.createElement('input');
@@ -81,7 +81,6 @@ querySnapshot.forEach((doc) => {
 
     // Append the checkbox and label elements to the colors div
     colorsDiv.appendChild(innerBox);
-    innerBox.appendChild(checkbox);
   });
 }
   </script>
@@ -113,9 +112,9 @@ querySnapshot.forEach((doc) => {
             <div id="selectColor_3" class="ParentBox"></div>
           </div>
 
-          <label class="flexContainer_2">
+          <label id="flexContainer_2">
             <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
+            <span id="checkmark"></span>
           </label>
           
         </div>
