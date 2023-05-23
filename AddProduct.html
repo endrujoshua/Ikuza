@@ -81,7 +81,8 @@ querySnapshot.forEach((doc) => {
     console.log(checkbox);
 
     // Append the checkbox and label elements to the colors div
-    colorsDiv.appendChild(checkbox);
+    colorsDiv.appendChild(innerBox);
+    innerBox.appendChild(checkbox);
   });
 }
   </script>
@@ -114,7 +115,9 @@ querySnapshot.forEach((doc) => {
           </div>
           <!-- TESTING-->
           <label id="flexContainer_2">
-            <input class="checkbox" type="checkbox" checked="checked">
+            <span class="checkmark">
+            <input class="checkmark" type="checkbox" checked="checked">
+          </span>
           </label>
           
         </div>
