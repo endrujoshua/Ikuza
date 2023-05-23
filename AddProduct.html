@@ -81,7 +81,8 @@ querySnapshot.forEach((doc) => {
     console.log(checkbox);
 
     // Append the checkbox and label elements to the colors div
-    colorsDiv.appendChild(checkbox);
+    colorsDiv.appendChild(innerBox);
+    innerBox.appendChild(checkbox);
   });
 }
   </script>
