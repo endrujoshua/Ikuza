@@ -786,7 +786,7 @@ background-color: rgba(0, 0, 0, 0.5);
 
 /* When the checkbox is checked, add opacity */
 #flexContainer_2 input:checked ~ .checkmark {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
